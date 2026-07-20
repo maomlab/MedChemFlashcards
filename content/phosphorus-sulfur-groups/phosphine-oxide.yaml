@@ -1,0 +1,16 @@
+id: phosphine-oxide
+deck: phosphorus-sulfur-groups
+name: Phosphine Oxide
+smarts: '[PX4](=[OX1])([#6])([#6])[#6]'
+representative_smiles: CP(=O)(C)C
+properties:
+  polarity: high
+relevance: Strongly polar P=O with three C-P bonds; a robust H-bond acceptor appearing in some kinase
+  inhibitors (e.g. brigatinib).
+tags:
+- polar
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

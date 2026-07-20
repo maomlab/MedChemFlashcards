@@ -1,0 +1,18 @@
+id: tryptophan-sidechain
+deck: amino-acid-side-chains
+name: Tryptophan (indolylmethyl)
+smarts: c1c[nH]c2ccccc12
+representative_smiles: N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O
+depiction:
+  highlight_smarts: c1c[nH]c2ccccc12
+properties:
+  polarity: low
+relevance: Large indole side chain; strong pi-stacking and cation-pi interactions, key at membrane interfaces.
+tags:
+- aromatic
+- hydrophobic
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

@@ -1,0 +1,17 @@
+id: acetal
+deck: common-functional-groups
+name: Acetal
+smarts: '[CX4H]([OX2][#6])[OX2][#6]'
+representative_smiles: COC(C)OC
+properties:
+  polarity: low
+relevance: Carbon bearing two ether oxygens; acid-labile, exploited to protect carbonyls and in acid-triggered
+  prodrugs.
+tags:
+- neutral
+- labile
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

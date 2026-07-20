@@ -1,0 +1,17 @@
+id: carbamate
+deck: common-functional-groups
+name: Carbamate
+smarts: '[NX3][CX3](=[OX1])[OX2][#6]'
+representative_smiles: CNC(=O)OC
+properties:
+  polarity: medium
+relevance: Amide/ester hybrid (-N-C(=O)-O-); more hydrolytically stable than an ester, used to tune permeability
+  and as a prodrug linker.
+tags:
+- neutral
+- hydrogen-bonding
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

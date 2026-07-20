@@ -1,0 +1,17 @@
+id: cbz-carbamate
+deck: medchem-tools
+name: Cbz (Benzyl Carbamate)
+aliases:
+- Z
+smarts: '[NX3][CX3](=[OX1])[OX2][CH2]c1ccccc1'
+representative_smiles: CNC(=O)OCc1ccccc1
+relevance: 'Benzyloxycarbonyl amine protection: stable to base, removed by hydrogenolysis — orthogonal
+  to acid-labile Boc.'
+tags:
+- protecting-group
+- tool
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

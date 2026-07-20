@@ -1,0 +1,18 @@
+id: thiomorpholine
+deck: saturated-heterocycles
+name: Thiomorpholine
+smarts: N1CCSCC1
+representative_smiles: C1CSCCN1
+properties:
+  polarity: medium
+relevance: Morpholine's sulfur analogue; more lipophilic and oxidisable to the sulfoxide/sulfone.
+bioisosteres:
+- morpholine
+tags:
+- basic
+- saturated
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

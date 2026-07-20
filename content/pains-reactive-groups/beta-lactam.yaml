@@ -1,0 +1,17 @@
+id: beta-lactam
+deck: pains-reactive-groups
+name: beta-Lactam
+smarts: '[NX3]1[CX3](=[OX1])[CX4][CX4]1'
+representative_smiles: O=C1CCN1
+properties:
+  polarity: medium
+relevance: Strained four-membered amide; acylates serine nucleophiles — the mechanism of penicillins and
+  a designed reactivity.
+tags:
+- reactive
+- covalent
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit-filtercatalog
+  retrieved: '2026-07-20'

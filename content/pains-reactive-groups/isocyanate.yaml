@@ -1,0 +1,16 @@
+id: isocyanate
+deck: pains-reactive-groups
+name: Isocyanate
+smarts: '[NX2]=[CX2]=[OX1]'
+representative_smiles: CN=C=O
+properties:
+  polarity: medium
+relevance: Cumulated N=C=O; acylates amines/thiols rapidly. A reagent and a sensitiser, not a drug substructure.
+tags:
+- reactive
+- structural-alert
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit-filtercatalog
+  retrieved: '2026-07-20'

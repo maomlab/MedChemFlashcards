@@ -1,0 +1,29 @@
+id: piperazine
+deck: saturated-heterocycles
+name: Piperazine
+smarts: N1CCNCC1
+representative_smiles: C1CNCCN1
+properties:
+  charge_at_ph7_4: 1
+  polarity: high
+relevance: Diamine ring providing two basic nitrogens; ubiquitous for solubility and as a linker in CNS
+  and kinase drugs.
+examples:
+- name: Sildenafil piperazine
+  smiles: CCN1CCN(CC1)S(=O)(=O)c1ccc(OCC)cc1
+tags:
+- basic
+- saturated
+difficulty: 1
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'
+- field: charge_at_ph7_4
+  ref: silverman-2014

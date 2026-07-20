@@ -1,0 +1,18 @@
+id: histidine-sidechain
+deck: amino-acid-side-chains
+name: Histidine (imidazole)
+smarts: c1c[nH]cn1
+representative_smiles: N[C@@H](Cc1c[nH]cn1)C(=O)O
+depiction:
+  highlight_smarts: c1c[nH]cn1
+properties:
+  polarity: high
+relevance: Imidazole side chain with a near-neutral pKa; a versatile acid/base and metal ligand in enzyme
+  active sites.
+tags:
+- amphoteric
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

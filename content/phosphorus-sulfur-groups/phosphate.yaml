@@ -1,0 +1,23 @@
+id: phosphate
+deck: phosphorus-sulfur-groups
+name: Phosphate
+smarts: '[PX4](=[OX1])([OX2])([OX2])[OX2]'
+representative_smiles: OP(=O)(O)OC
+properties:
+  charge_at_ph7_4: -2
+  polarity: high
+relevance: Di-anionic P(=O)(O)3 at physiological pH; central to nucleotides and signalling, but poorly
+  permeable (a prodrug target).
+tags:
+- acidic
+- ionizable
+difficulty: 2
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: charge_at_ph7_4
+  ref: silverman-2014

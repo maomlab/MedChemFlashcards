@@ -1,0 +1,18 @@
+id: cysteine-sidechain
+deck: amino-acid-side-chains
+name: Cysteine (thiol)
+smarts: '[CH2][SX2H]'
+representative_smiles: N[C@@H](CS)C(=O)O
+depiction:
+  highlight_smarts: '[CH2][SX2H]'
+properties:
+  polarity: medium
+relevance: Reactive thiol side chain; forms disulfides, binds metals, and is the target of covalent inhibitors.
+tags:
+- nucleophilic
+- metal-binding
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

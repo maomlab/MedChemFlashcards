@@ -1,0 +1,16 @@
+id: thiourea
+deck: phosphorus-sulfur-groups
+name: Thiourea
+smarts: '[NX3][CX3](=[SX1])[NX3]'
+representative_smiles: NC(=S)N
+properties:
+  polarity: high
+relevance: Two nitrogens flanking a C=S; a strong anion-binding H-bond donor and organocatalyst motif;
+  can chelate metals.
+tags:
+- hydrogen-bonding
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

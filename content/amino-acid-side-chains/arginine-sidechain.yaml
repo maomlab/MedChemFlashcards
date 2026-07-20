@@ -1,0 +1,25 @@
+id: arginine-sidechain
+deck: amino-acid-side-chains
+name: Arginine (guanidinium)
+smarts: '[NX3][CX3](=[NX2])[NX3]'
+representative_smiles: N[C@@H](CCCNC(=N)N)C(=O)O
+depiction:
+  highlight_smarts: '[NX3][CX3](=[NX2])[NX3]'
+properties:
+  charge_at_ph7_4: 1
+  polarity: high
+relevance: Strongly basic guanidinium side chain; permanently cationic, forms bidentate ionic and H-bond
+  interactions.
+tags:
+- basic
+- ionizable
+difficulty: 3
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: charge_at_ph7_4
+  ref: silverman-2014

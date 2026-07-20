@@ -1,0 +1,16 @@
+id: n-oxide
+deck: common-functional-groups
+name: Amine N-Oxide
+smarts: '[#7+][OX1-]'
+representative_smiles: C[N+](C)(C)[O-]
+properties:
+  polarity: high
+relevance: Dative N->O bond; highly polar, often a metabolite of tertiary amines and used in bioreductive
+  prodrugs.
+tags:
+- polar
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

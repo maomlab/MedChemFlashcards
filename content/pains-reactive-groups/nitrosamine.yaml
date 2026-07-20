@@ -1,0 +1,17 @@
+id: nitrosamine
+deck: pains-reactive-groups
+name: N-Nitrosamine
+smarts: '[NX3][NX2]=[OX1]'
+representative_smiles: CN(C)N=O
+properties:
+  polarity: medium
+relevance: N-N=O group; a high-priority genotoxic/carcinogenic alert and a major focus of pharmaceutical
+  impurity control.
+tags:
+- structural-alert
+- genotoxic
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit-filtercatalog
+  retrieved: '2026-07-20'

@@ -1,0 +1,18 @@
+id: serine-sidechain
+deck: amino-acid-side-chains
+name: Serine (hydroxymethyl)
+smarts: '[CH2][OX2H]'
+representative_smiles: N[C@@H](CO)C(=O)O
+depiction:
+  highlight_smarts: '[CH2][OX2H]'
+properties:
+  polarity: high
+relevance: Small hydroxyl side chain; a nucleophile in serine-protease catalytic triads and a phosphorylation
+  site.
+tags:
+- polar
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

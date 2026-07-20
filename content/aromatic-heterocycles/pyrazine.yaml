@@ -1,0 +1,17 @@
+id: pyrazine
+deck: aromatic-heterocycles
+name: Pyrazine
+smarts: c1cnccn1
+representative_smiles: c1cnccn1
+properties:
+  polarity: medium
+relevance: Six-membered ring with two para nitrogens; weakly basic diacceptor, improves solubility. Found
+  in many APIs and flavour molecules.
+tags:
+- aromatic
+- basic
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

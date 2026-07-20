@@ -1,0 +1,16 @@
+id: enol
+deck: common-functional-groups
+name: Enol
+smarts: '[OX2H][CX3]=[CX3]'
+representative_smiles: C=CO
+properties:
+  polarity: medium
+relevance: Hydroxyl on a C=C; usually the minor tautomer of a carbonyl but stabilised in 1,3-dicarbonyls,
+  giving acidic, chelating systems.
+tags:
+- tautomer
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

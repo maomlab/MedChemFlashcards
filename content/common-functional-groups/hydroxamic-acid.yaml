@@ -1,0 +1,23 @@
+id: hydroxamic-acid
+deck: common-functional-groups
+name: Hydroxamic Acid
+smarts: '[CX3](=[OX1])[NX3][OX2H]'
+representative_smiles: CC(=O)NO
+properties:
+  typical_pka: 8-9
+  polarity: high
+relevance: Strong bidentate metal chelator (-C(=O)-NH-OH); the zinc-binding group in many HDAC and metalloprotease
+  inhibitors.
+tags:
+- acidic
+- metal-binding
+difficulty: 3
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014

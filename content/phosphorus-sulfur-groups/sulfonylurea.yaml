@@ -1,0 +1,15 @@
+id: sulfonylurea
+deck: phosphorus-sulfur-groups
+name: Sulfonylurea
+smarts: '[SX4](=[OX1])(=[OX1])[NX3][CX3](=[OX1])[NX3]'
+representative_smiles: CS(=O)(=O)NC(=O)NC
+properties:
+  polarity: high
+relevance: Sulfonyl-linked urea; the pharmacophore of classic antidiabetics and some herbicides.
+tags:
+- acidic
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

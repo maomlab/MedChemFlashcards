@@ -1,0 +1,16 @@
+id: isoquinoline
+deck: aromatic-heterocycles
+name: Isoquinoline
+smarts: c1ccc2cnccc2c1
+representative_smiles: c1ccc2cnccc2c1
+properties:
+  polarity: low
+relevance: Benzo-fused pyridine (nitrogen at the 2-position); core of many alkaloids and CNS agents.
+tags:
+- aromatic
+- privileged
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

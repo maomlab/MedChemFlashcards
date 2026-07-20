@@ -1,0 +1,25 @@
+id: piperidine
+deck: saturated-heterocycles
+name: Piperidine
+smarts: N1CCCCC1
+representative_smiles: C1CCNCC1
+properties:
+  typical_pka: '11'
+  charge_at_ph7_4: 1
+  polarity: high
+relevance: Six-membered saturated amine; a very common basic, solubilising scaffold in drugs.
+tags:
+- basic
+- saturated
+difficulty: 1
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014
+- field: charge_at_ph7_4
+  ref: silverman-2014

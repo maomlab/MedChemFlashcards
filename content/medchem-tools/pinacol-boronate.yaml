@@ -1,0 +1,19 @@
+id: pinacol-boronate
+deck: medchem-tools
+name: Pinacol Boronate (Bpin)
+aliases:
+- Bpin
+smarts: '[#5]1[OX2][CX4][CX4][OX2]1'
+representative_smiles: CC1(C)OB(OC1(C)C)c1ccccc1
+properties:
+  polarity: low
+relevance: A stable, isolable boronic-ester handle for Suzuki-Miyaura cross-coupling — a cornerstone of
+  medicinal-chemistry synthesis.
+tags:
+- tool
+- cross-coupling
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

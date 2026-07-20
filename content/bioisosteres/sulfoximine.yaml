@@ -1,0 +1,19 @@
+id: sulfoximine
+deck: bioisosteres
+name: Sulfoximine
+smarts: '[SX4](=[OX1])(=[NX2])'
+representative_smiles: CS(=N)(=O)C
+properties:
+  polarity: high
+relevance: Chiral S(=O)(=N) centre; a polar, metabolically stable sulfone/sulfonamide bioisostere with
+  an extra vector (e.g. roniciclib).
+bioisosteres:
+- sulfone
+tags:
+- bioisostere
+- chiral
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

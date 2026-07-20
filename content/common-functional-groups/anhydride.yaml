@@ -1,0 +1,16 @@
+id: anhydride
+deck: common-functional-groups
+name: Anhydride
+smarts: '[CX3](=[OX1])[OX2][CX3]=[OX1]'
+representative_smiles: CC(=O)OC(C)=O
+properties:
+  polarity: medium
+relevance: Two acyl groups sharing an oxygen; highly electrophilic and moisture-sensitive — a reagent,
+  not a drug substructure.
+tags:
+- reactive
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

@@ -1,0 +1,17 @@
+id: tetrahydropyran
+deck: saturated-heterocycles
+name: Tetrahydropyran (Oxane)
+aliases:
+- oxane
+smarts: O1CCCCC1
+representative_smiles: C1CCOCC1
+properties:
+  polarity: low
+relevance: Saturated six-membered ether; a sugar-like, metabolically robust ring.
+tags:
+- saturated
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

@@ -1,0 +1,17 @@
+id: rhodanine
+deck: pains-reactive-groups
+name: Rhodanine
+smarts: '[NX3]1[CX3](=[OX1])[CX4][SX2][CX3]1=[SX1]'
+representative_smiles: O=C1CSC(=S)N1
+properties:
+  polarity: medium
+relevance: 'A notorious PAINS scaffold: frequently hits across unrelated assays via aggregation and reactivity.
+  Treat actives with strong scepticism.'
+tags:
+- pains
+- structural-alert
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit-filtercatalog
+  retrieved: '2026-07-20'

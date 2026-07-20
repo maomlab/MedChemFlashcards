@@ -1,0 +1,18 @@
+id: trityl
+deck: medchem-tools
+name: Trityl (Tr)
+aliases:
+- Tr
+smarts: '[CX4](c1ccccc1)(c1ccccc1)c1ccccc1'
+representative_smiles: OC(c1ccccc1)(c1ccccc1)c1ccccc1
+properties:
+  polarity: low
+relevance: 'Triphenylmethyl: a bulky, acid-labile protecting group for alcohols, amines, and thiols.'
+tags:
+- protecting-group
+- tool
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

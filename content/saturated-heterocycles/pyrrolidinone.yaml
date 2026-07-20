@@ -1,0 +1,17 @@
+id: pyrrolidinone
+deck: saturated-heterocycles
+name: Pyrrolidinone (Lactam)
+smarts: '[NX3]1[CX3](=[OX1])[CX4][CX4][CX4]1'
+representative_smiles: O=C1CCCN1
+properties:
+  polarity: medium
+relevance: Five-membered cyclic amide (2-pyrrolidinone); a polar, stable motif and the core of racetam
+  nootropics.
+tags:
+- neutral
+- saturated
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

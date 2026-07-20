@@ -1,0 +1,18 @@
+id: asparagine-sidechain
+deck: amino-acid-side-chains
+name: Asparagine (carboxamide)
+smarts: '[CH2][CX3](=[OX1])[NX3]'
+representative_smiles: NC(=O)C[C@@H](N)C(=O)O
+depiction:
+  highlight_smarts: '[CH2][CX3](=[OX1])[NX3]'
+properties:
+  polarity: high
+relevance: Neutral carboxamide side chain; H-bond donor/acceptor and the site of N-linked glycosylation.
+tags:
+- polar
+- hydrogen-bonding
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

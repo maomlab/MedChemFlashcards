@@ -1,0 +1,24 @@
+id: quinoline
+deck: aromatic-heterocycles
+name: Quinoline
+smarts: c1ccc2ncccc2c1
+representative_smiles: c1ccc2ncccc2c1
+properties:
+  polarity: low
+relevance: Benzo-fused pyridine; a classic antimalarial/antibacterial scaffold with a weakly basic acceptor
+  nitrogen.
+examples:
+- name: Chloroquine
+  smiles: CCN(CC)CCCC(C)Nc1ccnc2cc(Cl)ccc12
+  role: antimalarial
+tags:
+- aromatic
+- privileged
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

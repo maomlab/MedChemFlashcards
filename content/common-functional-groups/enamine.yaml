@@ -1,0 +1,16 @@
+id: enamine
+deck: common-functional-groups
+name: Enamine
+smarts: '[NX3][CX3]=[CX3]'
+representative_smiles: C=CN(C)C
+properties:
+  polarity: medium
+relevance: Nitrogen conjugated to a C=C; nucleophilic at carbon and hydrolytically labile. Key enamine
+  catalysis and metabolic intermediate.
+tags:
+- labile
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

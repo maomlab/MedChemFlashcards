@@ -1,0 +1,16 @@
+id: acetonide
+deck: medchem-tools
+name: Acetonide
+smarts: '[OX2][CX4]([CH3])([CH3])[OX2]'
+representative_smiles: CC1(C)OCCO1
+properties:
+  polarity: low
+relevance: Acetone-derived cyclic ketal protecting 1,2- or 1,3-diols; acid-labile and easily installed/removed.
+tags:
+- protecting-group
+- tool
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

@@ -1,0 +1,23 @@
+id: morpholine
+deck: saturated-heterocycles
+name: Morpholine
+smarts: N1CCOCC1
+representative_smiles: C1COCCN1
+properties:
+  typical_pka: 8-9
+  polarity: high
+relevance: Saturated ring with N and O; weakly basic and polar, a favourite solubilising group (e.g. in
+  PI3K inhibitors).
+tags:
+- basic
+- saturated
+difficulty: 1
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014

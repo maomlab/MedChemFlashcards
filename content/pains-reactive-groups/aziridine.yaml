@@ -1,0 +1,17 @@
+id: aziridine
+deck: pains-reactive-groups
+name: Aziridine
+smarts: '[#6]1[#6][#7]1'
+representative_smiles: C1CN1
+properties:
+  polarity: medium
+relevance: Strained three-membered N ring; a potent electrophilic alkylator (some anticancer agents) and
+  a genotoxicity alert.
+tags:
+- reactive
+- structural-alert
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit-filtercatalog
+  retrieved: '2026-07-20'

@@ -1,0 +1,17 @@
+id: maleimide
+deck: pains-reactive-groups
+name: Maleimide
+smarts: '[NX3]1[CX3](=[OX1])[CX3]=[CX3][CX3]1=[OX1]'
+representative_smiles: O=C1C=CC(=O)N1
+properties:
+  polarity: medium
+relevance: Electron-poor alkene that adds thiols rapidly; the workhorse of cysteine bioconjugation and
+  a reactivity alert.
+tags:
+- reactive
+- covalent
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit-filtercatalog
+  retrieved: '2026-07-20'

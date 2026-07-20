@@ -1,0 +1,17 @@
+id: pyridazine
+deck: aromatic-heterocycles
+name: Pyridazine
+smarts: c1ccnnc1
+representative_smiles: c1ccnnc1
+properties:
+  polarity: medium
+relevance: Two adjacent ring nitrogens; a strong dipole and dual H-bond acceptor used to modulate potency
+  and physicochemistry.
+tags:
+- aromatic
+- basic
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

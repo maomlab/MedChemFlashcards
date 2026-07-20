@@ -1,0 +1,17 @@
+id: benzimidazole
+deck: aromatic-heterocycles
+name: Benzimidazole
+smarts: c1ccc2[nH]cnc2c1
+representative_smiles: c1ccc2[nH]cnc2c1
+properties:
+  polarity: medium
+relevance: Benzo-fused imidazole; a privileged scaffold in PPIs and antiparasitics with a donor N-H and
+  acceptor N.
+tags:
+- aromatic
+- privileged
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

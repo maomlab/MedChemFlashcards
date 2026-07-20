@@ -1,0 +1,17 @@
+id: sulfonate-ester
+deck: phosphorus-sulfur-groups
+name: Sulfonate Ester
+smarts: '[SX4](=[OX1])(=[OX1])[OX2][#6]'
+representative_smiles: COS(C)(=O)=O
+properties:
+  polarity: medium
+relevance: Ester of a sulfonic acid; an excellent leaving group in synthesis but a potential alkylating
+  (genotoxic) impurity.
+tags:
+- reactive
+- structural-alert
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

@@ -1,0 +1,17 @@
+id: hydrazine
+deck: common-functional-groups
+name: Hydrazine
+smarts: '[NX3][NX3]'
+representative_smiles: CNN
+properties:
+  polarity: high
+relevance: N-N single bond; basic and nucleophilic. A structural alert (potential genotoxicity) but present
+  in drugs such as hydralazine.
+tags:
+- basic
+- structural-alert
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

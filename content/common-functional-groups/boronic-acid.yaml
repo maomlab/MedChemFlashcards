@@ -1,0 +1,17 @@
+id: boronic-acid
+deck: common-functional-groups
+name: Boronic Acid
+smarts: '[#5]([OX2H])[OX2H]'
+representative_smiles: OB(O)c1ccccc1
+properties:
+  polarity: high
+relevance: -B(OH)2 forms reversible covalent bonds with diols and serine/threonine nucleophiles; a warhead
+  in proteasome inhibitors (e.g. bortezomib).
+tags:
+- covalent
+- warhead
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

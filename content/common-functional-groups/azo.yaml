@@ -1,0 +1,16 @@
+id: azo
+deck: common-functional-groups
+name: Azo
+smarts: '[NX2]=[NX2]'
+representative_smiles: c1ccccc1/N=N/c1ccccc1
+properties:
+  polarity: low
+relevance: N=N double bond; a chromophore and an azo-reductase-cleavable linker (colon-targeted prodrugs).
+  A structural alert.
+tags:
+- structural-alert
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

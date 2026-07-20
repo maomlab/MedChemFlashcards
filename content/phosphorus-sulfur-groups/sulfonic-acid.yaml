@@ -1,0 +1,26 @@
+id: sulfonic-acid
+deck: phosphorus-sulfur-groups
+name: Sulfonic Acid
+smarts: '[SX4](=[OX1])(=[OX1])[OX2H]'
+representative_smiles: CS(=O)(=O)O
+properties:
+  typical_pka: <1
+  charge_at_ph7_4: -1
+  polarity: high
+relevance: Very strong acid (pKa < 1); fully anionic and highly polar, boosting solubility (dyes, contrast
+  agents).
+tags:
+- acidic
+- ionizable
+difficulty: 2
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014
+- field: charge_at_ph7_4
+  ref: silverman-2014

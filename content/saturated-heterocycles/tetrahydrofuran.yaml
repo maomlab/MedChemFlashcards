@@ -1,0 +1,17 @@
+id: tetrahydrofuran
+deck: saturated-heterocycles
+name: Tetrahydrofuran (Oxolane)
+aliases:
+- oxolane
+smarts: O1CCCC1
+representative_smiles: C1CCOC1
+properties:
+  polarity: low
+relevance: Saturated five-membered ether; a common weakly polar, sp3-rich ring.
+tags:
+- saturated
+difficulty: 1
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

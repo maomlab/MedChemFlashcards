@@ -1,0 +1,19 @@
+id: mesyl
+deck: medchem-tools
+name: Mesyl (Ms)
+aliases:
+- Ms
+smarts: '[SX4](=[OX1])(=[OX1])[CH3]'
+representative_smiles: CS(=O)(=O)OC
+properties:
+  polarity: medium
+relevance: Methanesulfonyl; converts alcohols into good leaving groups (mesylates) and protects amines.
+tags:
+- protecting-group
+- leaving-group
+- tool
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

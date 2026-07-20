@@ -1,0 +1,19 @@
+id: triazole-123
+deck: aromatic-heterocycles
+name: 1,2,3-Triazole
+smarts: c1cn[nH]n1
+representative_smiles: c1cn[nH]n1
+properties:
+  polarity: medium
+relevance: Three contiguous nitrogens; a robust, dipolar ring famously made by click chemistry and used
+  as an amide bioisostere.
+bioisosteres:
+- amide
+tags:
+- aromatic
+- click
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

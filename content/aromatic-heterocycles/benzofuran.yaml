@@ -1,0 +1,16 @@
+id: benzofuran
+deck: aromatic-heterocycles
+name: Benzofuran
+smarts: c1ccc2occc2c1
+representative_smiles: c1ccc2occc2c1
+properties:
+  polarity: low
+relevance: Benzo-fused furan; lipophilic aromatic core in natural products and drugs (e.g. amiodarone).
+tags:
+- aromatic
+- lipophilic
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

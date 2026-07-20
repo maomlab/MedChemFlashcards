@@ -1,0 +1,17 @@
+id: gem-difluoro
+deck: bioisosteres
+name: gem-Difluoromethylene
+smarts: '[CX4]([F])([F])'
+representative_smiles: CC(F)(F)C
+properties:
+  polarity: low
+relevance: CF2 mimics a carbonyl oxygen's electronics/size while resisting metabolism; a common carbonyl/ether
+  bioisostere.
+tags:
+- bioisostere
+- fluorine
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

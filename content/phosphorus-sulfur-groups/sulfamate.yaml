@@ -1,0 +1,24 @@
+id: sulfamate
+deck: phosphorus-sulfur-groups
+name: Sulfamate
+smarts: '[NX3][SX4](=[OX1])(=[OX1])[OX2]'
+representative_smiles: NS(=O)(=O)OC
+properties:
+  typical_pka: ~7
+  charge_at_ph7_4: -1
+  polarity: high
+relevance: N-S(=O)2-O motif; a metabolically stable acidic group in steroid-sulfatase inhibitors and topiramate.
+tags:
+- acidic
+difficulty: 3
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014
+- field: charge_at_ph7_4
+  ref: silverman-2014

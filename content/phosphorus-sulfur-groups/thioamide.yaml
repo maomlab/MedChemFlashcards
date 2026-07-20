@@ -1,0 +1,18 @@
+id: thioamide
+deck: phosphorus-sulfur-groups
+name: Thioamide
+smarts: '[NX3][CX3]=[SX1]'
+representative_smiles: CC(=S)N
+properties:
+  polarity: medium
+relevance: Sulfur analogue of an amide; a stronger H-bond donor and metal ligand, but a metabolic/tox
+  liability.
+bioisosteres:
+- amide
+tags:
+- hydrogen-bonding
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

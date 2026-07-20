@@ -1,0 +1,24 @@
+id: aspartate-sidechain
+deck: amino-acid-side-chains
+name: Aspartate (carboxylate)
+smarts: '[CH2][CX3](=O)[OX2H]'
+representative_smiles: N[C@@H](CC(=O)O)C(=O)O
+depiction:
+  highlight_smarts: '[CH2][CX3](=O)[OX2H]'
+properties:
+  charge_at_ph7_4: -1
+  polarity: high
+relevance: Acidic carboxylate side chain; anionic at physiological pH, forms salt bridges and metal coordination.
+tags:
+- acidic
+- ionizable
+difficulty: 2
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: charge_at_ph7_4
+  ref: silverman-2014

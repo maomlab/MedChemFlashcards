@@ -1,0 +1,17 @@
+id: proline-sidechain
+deck: amino-acid-side-chains
+name: Proline (pyrrolidine)
+smarts: '[NX3]1[CX4][CX4][CX4][CX4]1'
+representative_smiles: OC(=O)[C@@H]1CCCN1
+depiction:
+  highlight_smarts: '[NX3]1[CX4][CX4][CX4][CX4]1'
+properties:
+  polarity: low
+relevance: Cyclic secondary-amine side chain that constrains the backbone; a helix breaker and turn inducer.
+tags:
+- conformational
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

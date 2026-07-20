@@ -1,0 +1,17 @@
+id: cyclopropyl
+deck: bioisosteres
+name: Cyclopropyl
+smarts: '[CX4]1[CX4][CX4]1'
+representative_smiles: C1CC1c1ccccc1
+properties:
+  polarity: low
+relevance: Strained ring with pi-like character; a metabolically blocking, conformation-restricting bioisostere
+  for alkyl/vinyl groups.
+tags:
+- bioisostere
+- saturated
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

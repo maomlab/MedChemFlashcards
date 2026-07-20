@@ -1,0 +1,23 @@
+id: azetidine
+deck: saturated-heterocycles
+name: Azetidine
+smarts: N1CCC1
+representative_smiles: C1CNC1
+properties:
+  charge_at_ph7_4: 1
+  polarity: high
+relevance: Strained four-membered amine; basic and compact, popular for adding three-dimensionality with
+  low lipophilicity.
+tags:
+- basic
+- saturated
+difficulty: 2
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: charge_at_ph7_4
+  ref: silverman-2014

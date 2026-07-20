@@ -1,0 +1,18 @@
+id: tyrosine-sidechain
+deck: amino-acid-side-chains
+name: Tyrosine (4-hydroxybenzyl)
+smarts: '[OX2H]c1ccccc1'
+representative_smiles: N[C@@H](Cc1ccc(O)cc1)C(=O)O
+depiction:
+  highlight_smarts: '[OX2H]c1ccccc1'
+properties:
+  polarity: high
+relevance: Phenol side chain; H-bonding, a phosphorylation site, and mildly acidic.
+tags:
+- aromatic
+- hydrogen-bonding
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

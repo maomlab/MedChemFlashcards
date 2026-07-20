@@ -1,0 +1,20 @@
+id: oxadiazole-124
+deck: bioisosteres
+name: 1,2,4-Oxadiazole
+smarts: c1nocn1
+representative_smiles: Cc1noc(C)n1
+properties:
+  polarity: medium
+relevance: Aromatic ring used as a hydrolysis-resistant ester/amide bioisostere, retaining directionality
+  of H-bond acceptors.
+bioisosteres:
+- amide
+- ester
+tags:
+- bioisostere
+- aromatic
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
