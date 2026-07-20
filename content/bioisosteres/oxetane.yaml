@@ -1,0 +1,17 @@
+id: oxetane
+deck: bioisosteres
+name: Oxetane
+smarts: '[#6]1[#6][#8][#6]1'
+representative_smiles: C1COC1
+properties:
+  polarity: medium
+relevance: Four-membered oxygen ring used as a metabolically stable bioisostere of a gem-dimethyl group
+  or carbonyl, lowering lipophilicity while adding an H-bond acceptor.
+tags:
+- bioisostere
+- saturated
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

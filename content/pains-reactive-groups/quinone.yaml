@@ -1,0 +1,24 @@
+id: quinone
+deck: pains-reactive-groups
+name: Quinone
+smarts: '[#6]1(=O)[#6]=[#6][#6](=O)[#6]=[#6]1'
+representative_smiles: O=C1C=CC(=O)C=C1
+properties:
+  polarity: medium
+relevance: Cyclic dione that redox-cycles and reacts with thiols; a classic assay-interference (PAINS)
+  and toxicity alert.
+examples:
+- name: 1,4-Benzoquinone
+  smiles: O=C1C=CC(=O)C=C1
+tags:
+- pains
+- redox
+- structural-alert
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

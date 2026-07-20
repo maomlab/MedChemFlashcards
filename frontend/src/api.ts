@@ -53,14 +53,13 @@ export interface TokenResponse {
   token_type: string;
   user: AuthUser;
 }
+// Scheduler state is stored opaquely server-side so the algorithm can change
+// without a backend migration.
 export interface ServerProgress {
   card_id: string;
-  reps: number;
-  ease: number;
-  interval_days: number;
   due: string;
-  lapses: number;
   last_reviewed: string | null;
+  state: Record<string, number>;
 }
 
 export const api = {

@@ -1,0 +1,17 @@
+id: pyrrole
+deck: aromatic-heterocycles
+name: Pyrrole
+smarts: c1cc[nH]c1
+representative_smiles: c1cc[nH]c1
+properties:
+  polarity: low
+relevance: Electron-rich five-membered ring with a pyrrole-type N-H (H-bond donor, not basic). Core of
+  heme, chlorophyll, and many drugs.
+tags:
+- aromatic
+- hydrogen-bonding
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

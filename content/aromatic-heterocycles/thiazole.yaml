@@ -1,0 +1,23 @@
+id: thiazole
+deck: aromatic-heterocycles
+name: Thiazole
+smarts: c1cscn1
+representative_smiles: c1cscn1
+properties:
+  polarity: medium
+relevance: 1,3-Thiazole with S and a pyridine-type N acceptor; a privileged, lipophilic heterocycle (vitamin
+  B1, many drugs).
+examples:
+- name: Thiamine (vitamin B1) core
+  smiles: Cc1ncc(C[n+]2csc(CCO)c2C)c(N)n1
+tags:
+- aromatic
+- lipophilic
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

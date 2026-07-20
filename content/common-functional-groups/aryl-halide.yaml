@@ -1,0 +1,23 @@
+id: aryl-halide
+deck: common-functional-groups
+name: Aryl Halide
+smarts: '[c][F,Cl,Br,I]'
+representative_smiles: Clc1ccccc1
+properties:
+  polarity: low
+relevance: Halogen on an aromatic ring; boosts lipophilicity/metabolic stability and can make halogen
+  bonds. Ubiquitous potency handle.
+examples:
+- name: Chlorobenzene
+  smiles: Clc1ccccc1
+tags:
+- lipophilic
+- halogen-bond
+difficulty: 1
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

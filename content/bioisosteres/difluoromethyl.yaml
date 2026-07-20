@@ -1,0 +1,17 @@
+id: difluoromethyl
+deck: bioisosteres
+name: Difluoromethyl
+smarts: '[#6][CX4H1]([F])[F]'
+representative_smiles: FC(F)c1ccccc1
+properties:
+  polarity: low
+relevance: CF2H acts as a lipophilic hydrogen-bond donor, a bioisostere for hydroxyl/thiol that improves
+  membrane permeability and metabolic stability.
+tags:
+- bioisostere
+- fluorine
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

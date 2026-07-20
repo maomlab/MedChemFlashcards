@@ -1,0 +1,16 @@
+id: imine
+deck: common-functional-groups
+name: Imine (Schiff Base)
+smarts: '[CX3]=[NX2][#6]'
+representative_smiles: CC=NC
+properties:
+  polarity: medium
+relevance: C=N formed from amine + carbonyl; often hydrolytically labile. Central to PLP-dependent enzymology
+  and some covalent inhibitors.
+tags:
+- labile
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

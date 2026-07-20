@@ -1,0 +1,16 @@
+id: sulfone
+deck: common-functional-groups
+name: Sulfone
+smarts: '[SX4](=[OX1])(=[OX1])([#6])[#6]'
+representative_smiles: CS(=O)(=O)C
+properties:
+  polarity: high
+relevance: Strongly polar, metabolically robust S(=O)2; H-bond acceptor with no donor. Tunes potency and
+  solubility.
+tags:
+- polar
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

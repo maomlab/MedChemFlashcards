@@ -1,0 +1,24 @@
+id: pyrimidine
+deck: aromatic-heterocycles
+name: Pyrimidine
+smarts: c1cncnc1
+representative_smiles: c1cncnc1
+properties:
+  polarity: medium
+relevance: Six-membered ring with two meta nitrogens; core of nucleobases (cytosine, thymine, uracil)
+  and many kinase inhibitors.
+examples:
+- name: Uracil
+  smiles: O=c1cc[nH]c(=O)[nH]1
+  role: nucleobase
+tags:
+- aromatic
+- basic
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

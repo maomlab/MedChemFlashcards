@@ -1,0 +1,24 @@
+id: indole
+deck: aromatic-heterocycles
+name: Indole
+smarts: c1ccc2[nH]ccc2c1
+representative_smiles: c1ccc2[nH]ccc2c1
+properties:
+  polarity: low
+relevance: Bicyclic benzo-fused pyrrole; a privileged scaffold (tryptophan, serotonin, many alkaloids
+  and drugs).
+examples:
+- name: Serotonin
+  smiles: NCCc1c[nH]c2ccc(O)cc12
+  role: neurotransmitter
+tags:
+- aromatic
+- privileged
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

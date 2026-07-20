@@ -69,7 +69,25 @@ rebuilding content never touches user data.
 
 Passwords are argon2-hashed; sessions are JWTs. Anonymous use is fully
 functional — logging in only adds cross-device persistence, merging local and
-server progress per card by most-recent review.
+server progress per card by most-recent review. Scheduling uses **FSRS-4.5**;
+the app is a **PWA** and works offline for previously viewed content.
+
+## Docker
+
+A multi-stage build compiles the SPA, installs the Python runtime (with RDKit),
+bakes the content database into the image, and serves everything from FastAPI.
+
+```bash
+docker build -t medchem-flashcards .
+docker run -p 8000:8000 \
+  -e MEDCHEM_SECRET="$(openssl rand -hex 32)" \
+  -v medchem-users:/data \
+  medchem-flashcards
+# open http://localhost:8000
+```
+
+User accounts/progress persist in the `/data` volume; the content database is
+rebuilt into the image on every build, so it never collides with user data.
 
 ## Data sourcing & attribution
 

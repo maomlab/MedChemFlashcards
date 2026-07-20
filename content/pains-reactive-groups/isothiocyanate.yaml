@@ -1,0 +1,24 @@
+id: isothiocyanate
+deck: pains-reactive-groups
+name: Isothiocyanate
+smarts: '[NX2]=[CX2]=[SX1]'
+representative_smiles: CN=C=S
+properties:
+  polarity: medium
+relevance: Highly electrophilic N=C=S that acylates thiols and amines; a strong reactivity alert (though
+  bioactive in some natural products).
+examples:
+- name: Methyl isothiocyanate
+  smiles: CN=C=S
+tags:
+- reactive
+- structural-alert
+- covalent
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

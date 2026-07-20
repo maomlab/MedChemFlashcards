@@ -1,0 +1,17 @@
+id: acyl-halide
+deck: pains-reactive-groups
+name: Acyl Halide
+smarts: '[CX3](=[OX1])[F,Cl,Br]'
+representative_smiles: CC(=O)Cl
+properties:
+  polarity: medium
+relevance: Extremely electrophilic acylating agent; a synthetic reagent, never a drug substructure. Hydrolyses
+  rapidly.
+tags:
+- reactive
+- structural-alert
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

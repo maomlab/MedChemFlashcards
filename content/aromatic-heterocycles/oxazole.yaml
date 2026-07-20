@@ -1,0 +1,16 @@
+id: oxazole
+deck: aromatic-heterocycles
+name: Oxazole
+smarts: c1ocnc1
+representative_smiles: c1ocnc1
+properties:
+  polarity: medium
+relevance: '1,3-Oxazole: aromatic ring with O and pyridine-type N acceptor. Metabolically reasonable,
+  weakly basic.'
+tags:
+- aromatic
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

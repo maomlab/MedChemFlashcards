@@ -16,12 +16,9 @@ router = APIRouter(prefix="/progress", tags=["progress"])
 def _to_entry(p: Progress) -> ProgressEntry:
     return ProgressEntry(
         card_id=p.card_id,
-        reps=p.reps,
-        ease=p.ease,
-        interval_days=p.interval_days,
         due=p.due,
-        lapses=p.lapses,
         last_reviewed=p.last_reviewed,
+        state=p.state or {},
     )
 
 
@@ -65,20 +62,14 @@ def sync_progress(
                 Progress(
                     user_id=user.id,
                     card_id=entry.card_id,
-                    reps=entry.reps,
-                    ease=entry.ease,
-                    interval_days=entry.interval_days,
                     due=entry.due,
-                    lapses=entry.lapses,
                     last_reviewed=entry.last_reviewed,
+                    state=entry.state,
                 )
             )
         elif _newer(entry.last_reviewed, current.last_reviewed):
-            current.reps = entry.reps
-            current.ease = entry.ease
-            current.interval_days = entry.interval_days
             current.due = entry.due
-            current.lapses = entry.lapses
             current.last_reviewed = entry.last_reviewed
+            current.state = entry.state
     session.commit()
     return _all_entries(session, user.id)

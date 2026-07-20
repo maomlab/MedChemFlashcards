@@ -1,0 +1,30 @@
+id: phenol
+deck: common-functional-groups
+name: Phenol
+smarts: '[OX2H][c]'
+representative_smiles: Oc1ccccc1
+properties:
+  typical_pka: '10'
+  polarity: high
+relevance: Aromatic hydroxyl; weakly acidic (pKa ~10) H-bond donor/acceptor. Antioxidant but a frequent
+  glucuronidation/sulfation site.
+examples:
+- name: Tyrosine
+  smiles: N[C@@H](Cc1ccc(O)cc1)C(=O)O
+  role: amino acid
+tags:
+- acidic
+- hydrogen-bonding
+difficulty: 1
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014

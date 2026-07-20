@@ -68,15 +68,16 @@ class TokenResponse(BaseModel):
 
 
 class ProgressEntry(BaseModel):
-    """A single card's spaced-repetition state (mirrors the client scheduler)."""
+    """A single card's spaced-repetition state.
+
+    ``state`` is an opaque scheduler-specific blob (e.g. FSRS stability,
+    difficulty, reps, lapses); the server stores it without interpreting it.
+    """
 
     card_id: str
-    reps: int = 0
-    ease: float = 2.5
-    interval_days: int = 0
     due: str
-    lapses: int = 0
     last_reviewed: str | None = None
+    state: dict[str, float] = Field(default_factory=dict)
 
 
 class ProgressSync(BaseModel):

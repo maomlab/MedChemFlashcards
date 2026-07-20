@@ -1,0 +1,33 @@
+id: tertiary-amine
+deck: common-functional-groups
+name: Tertiary Amine
+smarts: '[NX3;H0;!$(NC=O)]([#6])([#6])[#6]'
+representative_smiles: CN(C)C
+properties:
+  typical_pka: 9-10
+  charge_at_ph7_4: 1
+  polarity: high
+relevance: Basic, cationic at physiological pH but no N-H donor. Frequent in aminergic drugs; site of
+  N-oxidation/dealkylation.
+examples:
+- name: Diphenhydramine
+  smiles: CN(C)CCOC(c1ccccc1)c1ccccc1
+  role: antihistamine
+tags:
+- basic
+- ionizable
+difficulty: 2
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014
+- field: charge_at_ph7_4
+  ref: silverman-2014

@@ -1,0 +1,31 @@
+id: thiol
+deck: common-functional-groups
+name: Thiol
+smarts: '[SX2H]'
+representative_smiles: CCS
+properties:
+  typical_pka: 8-10
+  polarity: medium
+relevance: Soft, highly nucleophilic S-H; weakly acidic (pKa ~8-10). Metal-binding and redox-active; prone
+  to oxidation to disulfides.
+examples:
+- name: Cysteine
+  smiles: N[C@@H](CS)C(=O)O
+  role: amino acid
+tags:
+- acidic
+- nucleophilic
+- metal-binding
+difficulty: 2
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014

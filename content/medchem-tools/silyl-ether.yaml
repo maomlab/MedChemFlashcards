@@ -1,0 +1,19 @@
+id: silyl-ether
+deck: medchem-tools
+name: Silyl Ether (TBS)
+aliases:
+- TBS ether
+smarts: '[OX2][Si]'
+representative_smiles: CO[Si](C)(C)C(C)(C)C
+properties:
+  polarity: low
+relevance: tert-Butyldimethylsilyl and related silyl ethers protect alcohols; stable to many conditions
+  and cleaved by fluoride. A bench workhorse.
+tags:
+- protecting-group
+- tool
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

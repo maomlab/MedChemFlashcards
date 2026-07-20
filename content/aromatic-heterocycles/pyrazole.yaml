@@ -1,0 +1,24 @@
+id: pyrazole
+deck: aromatic-heterocycles
+name: Pyrazole
+smarts: c1cc[nH]n1
+representative_smiles: c1cc[nH]n1
+properties:
+  polarity: medium
+relevance: '1,2-Diazole with adjacent N-H and pyridine-type N: both donor and acceptor. Versatile, metabolically
+  stable scaffold.'
+examples:
+- name: Celecoxib
+  smiles: Cc1ccc(cc1)-c1cc(nn1-c1ccc(cc1)S(N)(=O)=O)C(F)(F)F
+  role: COX-2
+tags:
+- aromatic
+- hydrogen-bonding
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

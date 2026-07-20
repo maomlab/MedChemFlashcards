@@ -64,12 +64,9 @@ def test_progress_sync_upsert_and_fetch(client: TestClient) -> None:
     entries = [
         {
             "card_id": "carboxylic-acid",
-            "reps": 2,
-            "ease": 2.5,
-            "interval_days": 6,
             "due": "2026-07-26",
-            "lapses": 0,
             "last_reviewed": "2026-07-20",
+            "state": {"stability": 6.0, "difficulty": 5.2, "reps": 2, "lapses": 0},
         },
     ]
     put = client.put("/api/progress", json={"entries": entries}, headers=headers)
@@ -79,52 +76,48 @@ def test_progress_sync_upsert_and_fetch(client: TestClient) -> None:
     got = client.get("/api/progress", headers=headers)
     assert got.status_code == 200
     assert len(got.json()) == 1
-    assert got.json()[0]["reps"] == 2
+    assert got.json()[0]["state"]["stability"] == 6.0
+
+
+def _entry(card_id: str, due: str, last_reviewed: str, reps: int) -> dict:
+    return {
+        "card_id": card_id,
+        "due": due,
+        "last_reviewed": last_reviewed,
+        "state": {"stability": float(reps), "difficulty": 5.0, "reps": reps, "lapses": 0},
+    }
 
 
 def test_progress_merge_last_reviewed_wins(client: TestClient) -> None:
     headers = _auth(client)
-    base = {"card_id": "amide", "ease": 2.5, "interval_days": 1, "lapses": 0}
     client.put(
         "/api/progress",
-        json={"entries": [{**base, "reps": 3, "due": "2026-07-25", "last_reviewed": "2026-07-20"}]},
+        json={"entries": [_entry("amide", "2026-07-25", "2026-07-20", 3)]},
         headers=headers,
     )
     # Older review must not overwrite the newer stored state.
     client.put(
         "/api/progress",
-        json={"entries": [{**base, "reps": 1, "due": "2026-07-19", "last_reviewed": "2026-07-18"}]},
+        json={"entries": [_entry("amide", "2026-07-19", "2026-07-18", 1)]},
         headers=headers,
     )
     got = client.get("/api/progress", headers=headers).json()
-    assert got[0]["reps"] == 3
+    assert got[0]["state"]["reps"] == 3
     # A newer review does overwrite.
     client.put(
         "/api/progress",
-        json={"entries": [{**base, "reps": 5, "due": "2026-08-01", "last_reviewed": "2026-07-22"}]},
+        json={"entries": [_entry("amide", "2026-08-01", "2026-07-22", 5)]},
         headers=headers,
     )
     got = client.get("/api/progress", headers=headers).json()
-    assert got[0]["reps"] == 5
+    assert got[0]["state"]["reps"] == 5
 
 
 def test_progress_is_per_user(client: TestClient) -> None:
     h1 = _auth(client)
     client.put(
         "/api/progress",
-        json={
-            "entries": [
-                {
-                    "card_id": "amide",
-                    "reps": 1,
-                    "ease": 2.5,
-                    "interval_days": 1,
-                    "due": "2026-07-21",
-                    "lapses": 0,
-                    "last_reviewed": "2026-07-20",
-                }
-            ]
-        },
+        json={"entries": [_entry("amide", "2026-07-21", "2026-07-20", 1)]},
         headers=h1,
     )
     token2 = client.post(

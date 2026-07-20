@@ -15,16 +15,29 @@
 | 1 — Schema & data model (Pydantic + JSON Schema + SQLAlchemy) | ✅ done |
 | 2 — Cheminformatics core (RDKit properties + highlighted SVG) | ✅ done |
 | 3 — Curation pipeline & QC (provenance/licensing gate) | ✅ done |
-| 4 — Seed content (23 cards across all 5 decks) | ✅ done (v1 slice) |
+| 4 — Seed content (48 cards across all 5 decks) | ✅ done |
 | 5 — Backend API (FastAPI: decks, cards, SVG) | ✅ done |
 | 6 — Frontend SPA (React + TS + Vite deck/card views) | ✅ done |
-| 7 — Spaced repetition (SM-2 + localStorage study loop) | ✅ done |
+| 7 — Spaced repetition (FSRS + localStorage study loop) | ✅ done |
 | 8 — Auth & progress sync (accounts, JWT, server-side merge) | ✅ done |
-| 9 — Packaging & deploy | ◐ partial (FastAPI serves built SPA; Docker/PWA pending) |
+| 9 — Packaging & deploy (Docker image, FastAPI-served SPA, offline PWA) | ✅ done |
 
 Quality gates all green: `ruff`, `mypy --strict` (30 files), 41 pytest tests,
-6 vitest tests, frontend `tsc`/build. The authored content passes the
-provenance/licensing QC gate.
+7 vitest tests, frontend `tsc`/build. The 48 authored cards pass the
+provenance/licensing QC gate (0 errors, 0 warnings).
+
+**Scheduler.** Upgraded from SM-2 to **FSRS-4.5** (stability/difficulty model,
+published default weights). The backend stores scheduler state as an opaque JSON
+blob (`Progress.state`) so future algorithm changes need no DB migration.
+
+**Content.** Common Functional Groups 24 · Aromatic Heterocycles 10 ·
+Bioisosteres 4 · PAINS & Reactive 6 · MedChem Tools 4.
+
+**Packaging.** Multi-stage `Dockerfile` (Node build of the SPA → Python runtime
+with RDKit, content DB baked in at build time, SPA served by FastAPI, user DB on
+a `/data` volume). Basic offline **PWA** (manifest, icon, runtime-caching service
+worker). Note: the Docker image was not built in the dev environment (no running
+daemon); the lockfile is verified in sync so the `--frozen` install is valid.
 
 **Auth architecture note.** User accounts and review progress live in a
 **separate SQLite database** (`$MEDCHEM_USER_DB`, default `data/users.db`) from
@@ -34,8 +47,10 @@ hashed; sessions are JWTs (`$MEDCHEM_SECRET`); progress sync merges client and
 server state per card by most-recent review (last-reviewed-wins). Anonymous use
 remains fully functional — login only adds cross-device persistence.
 
-Remaining work: FSRS (upgrade over SM-2), content scale-up (Phase 4 → full deck
-sizes), and the rest of Phase 9 (Docker image, optional offline PWA).
+All nine phases are implemented. Natural next steps beyond this plan: further
+content growth and expert review, PNG PWA icons for broader install support, an
+actual Docker image build in CI, and optional FSRS parameter optimization from
+real review logs.
 
 ## 1. Product summary
 

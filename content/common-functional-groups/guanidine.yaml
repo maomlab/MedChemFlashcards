@@ -1,0 +1,33 @@
+id: guanidine
+deck: common-functional-groups
+name: Guanidine
+smarts: '[NX3][CX3](=[NX2])[NX3]'
+representative_smiles: NC(=N)N
+properties:
+  typical_pka: 12-13
+  charge_at_ph7_4: 1
+  polarity: high
+relevance: Very strong base (pKa ~12-13), fully protonated and delocalized cation at physiological pH.
+  Forms bidentate ionic/H-bond interactions.
+examples:
+- name: Arginine
+  smiles: N[C@@H](CCCNC(=N)N)C(=O)O
+  role: amino acid
+tags:
+- basic
+- ionizable
+difficulty: 3
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014
+- field: charge_at_ph7_4
+  ref: silverman-2014

@@ -1,0 +1,26 @@
+id: sulfide
+deck: common-functional-groups
+name: Sulfide (Thioether)
+smarts: '[#6][SX2][#6]'
+representative_smiles: CSC
+properties:
+  polarity: low
+relevance: Neutral, lipophilic C-S-C linker; readily oxidized to sulfoxide/sulfone, an important metabolic
+  pathway.
+examples:
+- name: Methionine
+  smiles: CSCC[C@H](N)C(=O)O
+  role: amino acid
+bioisosteres:
+- ether
+tags:
+- neutral
+- lipophilic
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

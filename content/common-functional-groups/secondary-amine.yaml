@@ -1,0 +1,26 @@
+id: secondary-amine
+deck: common-functional-groups
+name: Secondary Amine
+smarts: '[NX3;H1;!$(NC=O)]([#6])[#6]'
+representative_smiles: CNC
+properties:
+  typical_pka: 10-11
+  charge_at_ph7_4: 1
+  polarity: high
+relevance: Basic, cationic at physiological pH; one N-H hydrogen-bond donor. Common in CNS drugs and readily
+  N-methylated in metabolism.
+tags:
+- basic
+- ionizable
+difficulty: 2
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014
+- field: charge_at_ph7_4
+  ref: silverman-2014

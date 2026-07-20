@@ -1,0 +1,26 @@
+id: amidine
+deck: common-functional-groups
+name: Amidine
+smarts: '[NX3][CX3]=[NX2]'
+representative_smiles: CC(=N)N
+properties:
+  typical_pka: 11-12
+  charge_at_ph7_4: 1
+  polarity: high
+relevance: Strongly basic, cationic H-bond donor/acceptor pair; a common warhead in serine-protease and
+  thrombin inhibitors.
+tags:
+- basic
+- ionizable
+difficulty: 3
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014
+- field: charge_at_ph7_4
+  ref: silverman-2014

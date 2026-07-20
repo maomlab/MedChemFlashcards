@@ -1,0 +1,17 @@
+id: alkyl-halide
+deck: common-functional-groups
+name: Alkyl Halide
+smarts: '[CX4][Cl,Br,I]'
+representative_smiles: CCCl
+properties:
+  polarity: low
+relevance: Halogen on sp3 carbon; electrophilic and a potential alkylating (genotoxic) alert, so used
+  sparingly in final drugs.
+tags:
+- reactive
+- structural-alert
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

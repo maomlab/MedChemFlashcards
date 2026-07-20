@@ -1,0 +1,19 @@
+id: tosyl
+deck: medchem-tools
+name: Tosyl (Ts)
+aliases:
+- Ts
+smarts: '[SX4](=[OX1])(=[OX1])c1ccc(C)cc1'
+representative_smiles: Cc1ccc(cc1)S(N)(=O)=O
+properties:
+  polarity: medium
+relevance: 'p-Toluenesulfonyl group: an activating/leaving group for alcohols and amines and a common
+  protecting group, removed under reductive or acidic conditions.'
+tags:
+- protecting-group
+- tool
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

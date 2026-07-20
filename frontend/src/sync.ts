@@ -8,24 +8,26 @@ import { type CardState, loadStore, saveStore } from "./srs";
 function toServer(s: CardState): ServerProgress {
   return {
     card_id: s.id,
-    reps: s.reps,
-    ease: s.ease,
-    interval_days: s.intervalDays,
     due: s.due,
-    lapses: s.lapses,
-    last_reviewed: s.lastReviewed,
+    last_reviewed: s.lastReview,
+    state: {
+      stability: s.stability,
+      difficulty: s.difficulty,
+      reps: s.reps,
+      lapses: s.lapses,
+    },
   };
 }
 
 function fromServer(e: ServerProgress): CardState {
   return {
     id: e.card_id,
-    reps: e.reps,
-    ease: e.ease,
-    intervalDays: e.interval_days,
     due: e.due,
-    lapses: e.lapses,
-    lastReviewed: e.last_reviewed,
+    lastReview: e.last_reviewed,
+    stability: e.state.stability ?? 0,
+    difficulty: e.state.difficulty ?? 0,
+    reps: e.state.reps ?? 0,
+    lapses: e.state.lapses ?? 0,
   };
 }
 

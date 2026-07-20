@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="MedChem Flashcards">
+  <rect width="192" height="192" rx="36" fill="#2563eb"/>
+  <g fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="96,52 128,70 128,106 96,124 64,106 64,70"/>
+    <line x1="96" y1="124" x2="96" y2="148"/>
+    <line x1="64" y1="106" x2="44" y2="120"/>
+    <line x1="128" y1="106" x2="148" y2="120"/>
+  </g>
+  <circle cx="96" cy="148" r="10" fill="#f9b234"/>
+</svg>
