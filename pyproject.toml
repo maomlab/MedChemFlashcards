@@ -1,0 +1,91 @@
+[project]
+name = "medchem-flashcards"
+version = "0.1.0"
+description = "Spaced-repetition flashcards for teaching medicinal-chemistry functional groups."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "MedChem Flashcards contributors" }]
+dependencies = [
+    "rdkit>=2024.3",
+    "pydantic>=2.7",
+    "pyyaml>=6.0",
+    "sqlalchemy>=2.0",
+    "alembic>=1.13",
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "httpx>=0.27",
+    "typer>=0.12",
+    "rich>=13.7",
+    "argon2-cffi>=23.1",
+    "pyjwt>=2.8",
+]
+
+[project.scripts]
+medchem = "medchem_flashcards.cli:app"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.2",
+    "pytest-cov>=5.0",
+    "hypothesis>=6.100",
+    "mypy>=1.10",
+    "ruff>=0.5",
+    "nox>=2024.4",
+    "pre-commit>=3.7",
+    "types-PyYAML>=6.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/medchem_flashcards"]
+
+# ---------------------------------------------------------------------------
+# Tooling
+# ---------------------------------------------------------------------------
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "C4", "RUF", "N", "PL"]
+ignore = ["PLR0913"]  # allow functions with several keyword args (chem APIs)
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["PLR2004", "PLC0415"]  # magic values and local imports are fine in tests
+# Typer's idiom puts `typer.Option(...)` in defaults (B008), and CLI subcommands
+# import their implementations lazily to keep the CLI importable (PLC0415).
+"src/medchem_flashcards/cli.py" = ["B008", "PLC0415"]
+# FastAPI's dependency-injection idiom puts `Depends(...)` in argument defaults.
+"src/medchem_flashcards/api/**" = ["B008"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+# RDKit ships no usable type information; treat it as untyped (Any) everywhere.
+module = ["rdkit.*"]
+ignore_missing_imports = true
+follow_imports = "skip"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+filterwarnings = ["error::DeprecationWarning:medchem_flashcards.*"]
+
+[tool.coverage.run]
+source = ["medchem_flashcards"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

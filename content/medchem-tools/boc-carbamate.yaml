@@ -1,0 +1,17 @@
+id: boc-carbamate
+deck: medchem-tools
+name: Boc (tert-Butyl Carbamate)
+aliases:
+- t-Boc
+smarts: '[NX3][CX3](=[OX1])[OX2]C(C)(C)C'
+representative_smiles: CNC(=O)OC(C)(C)C
+relevance: 'tert-Butoxycarbonyl amine-protecting group: stable to base/nucleophiles, cleaved by acid (TFA).
+  A workhorse handle in medicinal-chemistry synthesis.'
+tags:
+- protecting-group
+- tool
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

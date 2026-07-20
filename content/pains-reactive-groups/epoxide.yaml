@@ -1,0 +1,24 @@
+id: epoxide
+deck: pains-reactive-groups
+name: Epoxide
+smarts: '[#6]1[#6][#8]1'
+representative_smiles: C1CO1
+properties:
+  polarity: medium
+relevance: Strained three-membered oxirane; electrophilic and readily ring-opened by nucleophiles. A reactivity/genotoxicity
+  alert.
+examples:
+- name: Ethylene oxide
+  smiles: C1CO1
+  wikidata_id: Q142168
+tags:
+- reactive
+- structural-alert
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

@@ -1,0 +1,24 @@
+id: furan
+deck: aromatic-heterocycles
+name: Furan
+smarts: c1ccoc1
+representative_smiles: c1ccoc1
+properties:
+  polarity: low
+relevance: 'Electron-rich five-membered oxygen heterocycle. Metabolic liability: epoxidation can generate
+  reactive intermediates (a structural alert).'
+examples:
+- name: Furan
+  smiles: c1ccoc1
+  wikidata_id: Q278778
+tags:
+- aromatic
+- structural-alert
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

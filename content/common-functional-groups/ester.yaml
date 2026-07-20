@@ -1,0 +1,24 @@
+id: ester
+deck: common-functional-groups
+name: Ester
+smarts: '[CX3](=[OX1])[OX2][#6]'
+representative_smiles: CC(=O)OC
+properties:
+  polarity: medium
+relevance: H-bond acceptor; often hydrolytically labile, exploited in prodrugs to mask acids. Susceptible
+  to esterase cleavage in vivo.
+examples:
+- name: Methyl acetate
+  smiles: CC(=O)OC
+  wikidata_id: Q409393
+tags:
+- neutral
+- labile
+difficulty: 1
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

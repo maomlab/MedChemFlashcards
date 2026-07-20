@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Project build artifacts (regenerated from content/ + code)
+data/*.db
+data/*.db-journal
+assets/svg/*.svg
+
+# Source-adapter caches
+.cache/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Editor / OS
+.DS_Store
+*~
+.idea/
+.vscode/

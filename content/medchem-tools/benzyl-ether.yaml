@@ -1,0 +1,17 @@
+id: benzyl-ether
+deck: medchem-tools
+name: Benzyl Ether
+aliases:
+- Bn ether
+smarts: '[OX2][CH2]c1ccccc1'
+representative_smiles: COCc1ccccc1
+relevance: 'Benzyl (Bn) protecting group for alcohols/phenols: stable to acid/base, removed by hydrogenolysis.
+  Common orthogonal protecting strategy.'
+tags:
+- protecting-group
+- tool
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

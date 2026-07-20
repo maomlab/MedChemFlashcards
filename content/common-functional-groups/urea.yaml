@@ -1,0 +1,25 @@
+id: urea
+deck: common-functional-groups
+name: Urea
+smarts: '[NX3][CX3](=[OX1])[NX3]'
+representative_smiles: NC(=O)N
+properties:
+  polarity: high
+relevance: Two H-bond donors and an acceptor in a compact, planar motif; a common hinge-binding group
+  in kinase inhibitors.
+examples:
+- name: Sorafenib
+  smiles: CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(c3)C(F)(F)F)cc2)ccn1
+  role: kinase inhibitor
+  chembl_id: CHEMBL1336
+tags:
+- neutral
+- hydrogen-bonding
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: chembl
+  retrieved: '2026-07-20'

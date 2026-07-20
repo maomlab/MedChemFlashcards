@@ -1,0 +1,26 @@
+id: thiophene
+deck: aromatic-heterocycles
+name: Thiophene
+smarts: c1ccsc1
+representative_smiles: c1ccsc1
+properties:
+  polarity: low
+relevance: Aromatic sulfur heterocycle; a common lipophilic benzene bioisostere with favourable metabolic
+  profile relative to furan.
+examples:
+- name: Tiotropium fragment (thiophene)
+  smiles: c1ccsc1
+  wikidata_id: Q408801
+bioisosteres:
+- furan
+tags:
+- aromatic
+- lipophilic
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

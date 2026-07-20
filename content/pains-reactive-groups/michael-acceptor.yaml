@@ -1,0 +1,25 @@
+id: michael-acceptor
+deck: pains-reactive-groups
+name: Michael Acceptor (Enone)
+smarts: '[CX3]=[CX3][CX3]=[OX1]'
+representative_smiles: C=CC(=O)C
+properties:
+  polarity: medium
+relevance: alpha,beta-unsaturated carbonyl that reacts with biological nucleophiles (e.g. cysteine thiols).
+  A reactivity alert - sometimes exploited for covalent inhibitors, often flagged as promiscuous.
+examples:
+- name: Methyl vinyl ketone
+  smiles: C=CC(=O)C
+  wikidata_id: Q419686
+tags:
+- reactive
+- structural-alert
+- covalent
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit-filtercatalog
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

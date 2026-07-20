@@ -1,0 +1,24 @@
+id: imidazole
+deck: aromatic-heterocycles
+name: Imidazole
+smarts: c1c[nH]cn1
+representative_smiles: c1c[nH]cn1
+properties:
+  polarity: high
+relevance: 'Five-membered ring with two nitrogens: one pyrrole-type (H-bond donor) and one pyridine-type
+  (acceptor). Amphoteric; key in histidine and antifungals.'
+examples:
+- name: Histidine
+  smiles: N[C@@H](Cc1c[nH]cn1)C(=O)O
+  wikidata_id: Q485277
+tags:
+- aromatic
+- amphoteric
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

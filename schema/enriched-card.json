@@ -1,0 +1,441 @@
+{
+  "$defs": {
+    "ComputedProperties": {
+      "additionalProperties": false,
+      "description": "RDKit-derived descriptors, computed from ``representative_smiles``.\n\nNever hand-authored; the pipeline fills these and attributes them to RDKit.",
+      "properties": {
+        "clogp": {
+          "title": "Clogp",
+          "type": "number"
+        },
+        "formula": {
+          "title": "Formula",
+          "type": "string"
+        },
+        "fraction_csp3": {
+          "title": "Fraction Csp3",
+          "type": "number"
+        },
+        "h_acceptors": {
+          "title": "H Acceptors",
+          "type": "integer"
+        },
+        "h_donors": {
+          "title": "H Donors",
+          "type": "integer"
+        },
+        "mol_weight": {
+          "title": "Mol Weight",
+          "type": "number"
+        },
+        "num_aromatic_rings": {
+          "title": "Num Aromatic Rings",
+          "type": "integer"
+        },
+        "num_rings": {
+          "title": "Num Rings",
+          "type": "integer"
+        },
+        "rotatable_bonds": {
+          "title": "Rotatable Bonds",
+          "type": "integer"
+        },
+        "tpsa": {
+          "title": "Tpsa",
+          "type": "number"
+        }
+      },
+      "required": [
+        "formula",
+        "mol_weight",
+        "clogp",
+        "tpsa",
+        "h_donors",
+        "h_acceptors",
+        "rotatable_bonds",
+        "fraction_csp3",
+        "num_rings",
+        "num_aromatic_rings"
+      ],
+      "title": "ComputedProperties",
+      "type": "object"
+    },
+    "CuratedProperties": {
+      "additionalProperties": false,
+      "description": "Human-curated physicochemical descriptors.\n\nOnly quantitative, sourceable facts live here (``typical_pka``,\n``charge_at_ph7_4``) and require provenance. H-bond donor/acceptor counts are\nRDKit-derived (see :class:`ComputedProperties`) and are never hand-authored.\n``polarity`` is an optional editorial teaching label, not a sourced datum.",
+      "properties": {
+        "charge_at_ph7_4": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Charge At Ph7 4"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "polarity": {
+          "anyOf": [
+            {
+              "enum": [
+                "low",
+                "medium",
+                "high"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Polarity"
+        },
+        "typical_pka": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Typical Pka"
+        }
+      },
+      "title": "CuratedProperties",
+      "type": "object"
+    },
+    "Depiction": {
+      "additionalProperties": false,
+      "description": "Depiction directives. ``highlight_smarts`` defaults to the card SMARTS.",
+      "properties": {
+        "highlight_smarts": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Highlight Smarts"
+        }
+      },
+      "title": "Depiction",
+      "type": "object"
+    },
+    "Example": {
+      "additionalProperties": false,
+      "description": "An example molecule (drug or key biomolecule) containing the group.",
+      "properties": {
+        "chembl_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Chembl Id"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "pubchem_cid": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pubchem Cid"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Role"
+        },
+        "smiles": {
+          "minLength": 1,
+          "title": "Smiles",
+          "type": "string"
+        },
+        "wikidata_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wikidata Id"
+        }
+      },
+      "required": [
+        "name",
+        "smiles"
+      ],
+      "title": "Example",
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "description": "Attribution for a single non-computed field.\n\nExactly one of ``source`` (an approved source key, see ``LICENSES.md``) or\n``ref`` (an id in the card's ``references``) must be given.",
+      "properties": {
+        "field": {
+          "minLength": 1,
+          "title": "Field",
+          "type": "string"
+        },
+        "license": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "License"
+        },
+        "ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ref"
+        },
+        "retrieved": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Retrieved"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        }
+      },
+      "required": [
+        "field"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    },
+    "Reference": {
+      "additionalProperties": false,
+      "description": "A literature/citation reference, addressable by ``id`` from provenance.",
+      "properties": {
+        "citation": {
+          "minLength": 1,
+          "title": "Citation",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        }
+      },
+      "required": [
+        "id",
+        "citation"
+      ],
+      "title": "Reference",
+      "type": "object"
+    }
+  },
+  "$id": "https://medchem-flashcards/schema/enriched-card-1.0.0.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "A card after ingestion: authored content plus computed props and SVG.",
+  "properties": {
+    "aliases": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Aliases",
+      "type": "array"
+    },
+    "bioisosteres": {
+      "items": {
+        "minLength": 1,
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "type": "string"
+      },
+      "title": "Bioisosteres",
+      "type": "array"
+    },
+    "computed": {
+      "$ref": "#/$defs/ComputedProperties"
+    },
+    "deck": {
+      "minLength": 1,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "title": "Deck",
+      "type": "string"
+    },
+    "depiction": {
+      "$ref": "#/$defs/Depiction"
+    },
+    "difficulty": {
+      "default": 1,
+      "maximum": 5,
+      "minimum": 1,
+      "title": "Difficulty",
+      "type": "integer"
+    },
+    "examples": {
+      "items": {
+        "$ref": "#/$defs/Example"
+      },
+      "title": "Examples",
+      "type": "array"
+    },
+    "id": {
+      "minLength": 1,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "title": "Id",
+      "type": "string"
+    },
+    "name": {
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "properties": {
+      "$ref": "#/$defs/CuratedProperties"
+    },
+    "provenance": {
+      "items": {
+        "$ref": "#/$defs/Provenance"
+      },
+      "title": "Provenance",
+      "type": "array"
+    },
+    "references": {
+      "items": {
+        "$ref": "#/$defs/Reference"
+      },
+      "title": "References",
+      "type": "array"
+    },
+    "relevance": {
+      "minLength": 1,
+      "title": "Relevance",
+      "type": "string"
+    },
+    "representative_smiles": {
+      "minLength": 1,
+      "title": "Representative Smiles",
+      "type": "string"
+    },
+    "smarts": {
+      "minLength": 1,
+      "title": "Smarts",
+      "type": "string"
+    },
+    "svg": {
+      "title": "Svg",
+      "type": "string"
+    },
+    "tags": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Tags",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "deck",
+    "name",
+    "smarts",
+    "representative_smiles",
+    "relevance",
+    "computed",
+    "svg"
+  ],
+  "title": "EnrichedCard",
+  "type": "object"
+}

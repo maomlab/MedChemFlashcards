@@ -1,0 +1,23 @@
+id: nitrile
+deck: common-functional-groups
+name: Nitrile
+smarts: '[NX1]#[CX2]'
+representative_smiles: CC#N
+properties:
+  polarity: medium
+relevance: Linear, strongly polar, weak H-bond acceptor. Metabolically stable bioisostere for carbonyl/halogen;
+  can serve as a hydrogen-bond acceptor vector.
+examples:
+- name: Acetonitrile
+  smiles: CC#N
+  wikidata_id: Q408330
+tags:
+- neutral
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

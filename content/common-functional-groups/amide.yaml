@@ -1,0 +1,25 @@
+id: amide
+deck: common-functional-groups
+name: Amide
+smarts: '[NX3][CX3]=[OX1]'
+representative_smiles: CC(=O)N
+properties:
+  polarity: medium
+relevance: Planar, weakly polar linkage central to peptides and many drugs. Good metabolic stability relative
+  to esters; H-bond donor and acceptor.
+examples:
+- name: Paracetamol
+  smiles: CC(=O)Nc1ccc(O)cc1
+  role: analgesic
+  chembl_id: CHEMBL112
+tags:
+- neutral
+- hydrogen-bonding
+difficulty: 1
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: chembl
+  retrieved: '2026-07-20'

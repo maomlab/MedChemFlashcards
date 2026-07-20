@@ -1,0 +1,23 @@
+id: aldehyde
+deck: common-functional-groups
+name: Aldehyde
+smarts: '[CX3H1](=O)[#6]'
+representative_smiles: CC=O
+properties:
+  polarity: medium
+relevance: Electrophilic carbonyl; reactive toward nucleophiles and often a toxicity/reactivity liability.
+  H-bond acceptor.
+examples:
+- name: Acetaldehyde
+  smiles: CC=O
+  wikidata_id: Q60355
+tags:
+- reactive
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

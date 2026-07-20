@@ -1,0 +1,26 @@
+id: hydroxyl
+deck: common-functional-groups
+name: Hydroxyl (Alcohol)
+aliases:
+- alcohol
+smarts: '[OX2H][CX4]'
+representative_smiles: CCO
+properties:
+  polarity: medium
+relevance: Neutral H-bond donor and acceptor; improves solubility but can reduce membrane permeability.
+  Frequent site of phase II conjugation.
+examples:
+- name: Ethanol
+  smiles: CCO
+  wikidata_id: Q153
+tags:
+- neutral
+- hydrogen-bonding
+difficulty: 1
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

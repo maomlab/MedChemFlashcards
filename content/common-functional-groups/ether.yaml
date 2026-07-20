@@ -1,0 +1,23 @@
+id: ether
+deck: common-functional-groups
+name: Ether
+smarts: '[OD2]([#6])[#6]'
+representative_smiles: COC
+properties:
+  polarity: low
+relevance: Weak H-bond acceptor; metabolically fairly stable. Common linker that tunes lipophilicity and
+  conformation.
+examples:
+- name: Diethyl ether
+  smiles: CCOCC
+  wikidata_id: Q61457
+tags:
+- neutral
+difficulty: 1
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

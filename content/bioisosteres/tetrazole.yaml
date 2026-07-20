@@ -1,0 +1,37 @@
+id: tetrazole
+deck: bioisosteres
+name: Tetrazole
+smarts: c1nnn[nH]1
+representative_smiles: c1ccc(-c2nnn[nH]2)cc1
+properties:
+  typical_pka: 4-5
+  charge_at_ph7_4: -1
+  polarity: high
+relevance: 'Classic non-classical bioisostere of the carboxylic acid: similar acidity (pKa ~4.5) and anionic
+  charge, but greater lipophilicity and metabolic stability. Prominent in angiotensin-receptor blockers
+  (''-sartans'').'
+examples:
+- name: Losartan
+  smiles: CCCCc1nc(Cl)c(CO)n1Cc1ccc(-c2ccccc2-c2nnn[nH]2)cc1
+  role: ARB
+  chembl_id: CHEMBL892
+bioisosteres:
+- carboxylic-acid
+tags:
+- acidic
+- bioisostere
+difficulty: 3
+references:
+- id: meanwell-2011
+  citation: Meanwell, Synopsis of Some Recent Tactical Applications of Bioisosteres, J. Med. Chem. (2011)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: meanwell-2011
+- field: charge_at_ph7_4
+  ref: meanwell-2011
+- field: examples
+  source: chembl
+  retrieved: '2026-07-20'

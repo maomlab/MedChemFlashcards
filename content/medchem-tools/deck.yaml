@@ -1,0 +1,5 @@
+id: medchem-tools
+title: Medicinal Chemistry Tools
+description: Protecting groups and molecular handles used routinely at the bench.
+order: 5
+level: core

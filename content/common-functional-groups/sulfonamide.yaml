@@ -1,0 +1,27 @@
+id: sulfonamide
+deck: common-functional-groups
+name: Sulfonamide
+smarts: '[SX4](=[OX1])(=[OX1])[NX3]'
+representative_smiles: CS(=O)(=O)N
+properties:
+  polarity: high
+relevance: Weakly acidic N-H; strong H-bond donor/acceptor. Privileged medicinal motif (antibacterials,
+  carbonic anhydrase inhibitors).
+examples:
+- name: Sulfanilamide
+  smiles: Nc1ccc(cc1)S(N)(=O)=O
+  role: antibacterial
+  chembl_id: CHEMBL22315
+bioisosteres:
+- carboxylic-acid
+tags:
+- acidic
+- hydrogen-bonding
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: chembl
+  retrieved: '2026-07-20'

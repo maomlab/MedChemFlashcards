@@ -1,0 +1,24 @@
+id: pyridine
+deck: aromatic-heterocycles
+name: Pyridine
+smarts: c1ccncc1
+representative_smiles: c1ccncc1
+properties:
+  polarity: medium
+relevance: Six-membered aromatic ring with one basic sp2 nitrogen (pyridine-type). Weakly basic H-bond
+  acceptor; ubiquitous, improves solubility over benzene.
+examples:
+- name: Nicotine
+  smiles: CN1CCCC1c1cccnc1
+  chembl_id: CHEMBL3
+tags:
+- aromatic
+- basic
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: chembl
+  retrieved: '2026-07-20'

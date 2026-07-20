@@ -1,0 +1,24 @@
+id: nitro
+deck: common-functional-groups
+name: Nitro
+smarts: '[$([NX3](=O)=O),$([NX3+](=O)[O-])]'
+representative_smiles: O=[N+]([O-])c1ccccc1
+properties:
+  polarity: high
+relevance: Strongly electron-withdrawing; a structural-alert group associated with mutagenicity via nitroreduction.
+  Used cautiously in drug design.
+examples:
+- name: Nitrobenzene
+  smiles: O=[N+]([O-])c1ccccc1
+  wikidata_id: Q408932
+tags:
+- reactive
+- structural-alert
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

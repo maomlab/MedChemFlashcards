@@ -1,0 +1,23 @@
+id: ketone
+deck: common-functional-groups
+name: Ketone
+smarts: '[#6][CX3](=O)[#6]'
+representative_smiles: CC(=O)C
+properties:
+  polarity: medium
+relevance: Polar carbonyl; H-bond acceptor only. Can be a metabolic soft spot (reduction to alcohol) and
+  an electrophilic reactive centre.
+examples:
+- name: Acetone
+  smiles: CC(=O)C
+  wikidata_id: Q49546
+tags:
+- neutral
+difficulty: 1
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'
