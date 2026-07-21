@@ -122,5 +122,5 @@ attributions.
 
 ## License
 
-Code is MIT (see `pyproject.toml`). Curated content inherits the licenses of its
-upstream sources — consult `LICENSES.md` before redistributing.
+Code is MIT — see [`LICENSE`](LICENSE). Curated content inherits the licenses of
+its upstream sources — consult `LICENSES.md` before redistributing.
