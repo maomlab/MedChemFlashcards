@@ -59,6 +59,22 @@ def test_render_svg_no_highlight_when_pattern_absent() -> None:
     assert svg.startswith("<svg")
 
 
+def test_heteroatoms_keep_cpk_colors_even_when_highlighted() -> None:
+    # Regression: the motif's own heteroatoms must keep standard element colours
+    # (oxygen red, nitrogen blue) rather than being blacked out by the highlight.
+    acid = render_svg("CC(=O)O", "[CX3](=O)[OX2H1]")
+    assert "#FF0000" in acid  # carboxyl oxygens are red
+    amine = render_svg("CCN", "[NX3;H2]")
+    assert "#0000FF" in amine  # amine nitrogen is blue
+
+
+def test_motif_is_highlighted_via_bond_colour() -> None:
+    # The functional group is still marked (amber bond highlight present), and a
+    # single-atom motif (thiol S) falls back to its incident bond.
+    assert "#F9B233" in render_svg("CC(=O)O", "[CX3](=O)[OX2H1]")
+    assert "#F9B233" in render_svg("CCS", "[SX2H]")
+
+
 # --- Property-based invariants -------------------------------------------------
 
 _SIMPLE_SMILES = st.sampled_from(
