@@ -1,0 +1,17 @@
+id: pivaloyl
+deck: medchem-tools
+name: Pivaloyl (Piv)
+aliases:
+- Piv
+smarts: '[CX3](=[OX1])[CX4]([CH3])([CH3])[CH3]'
+representative_smiles: CC(C)(C)C(=O)OC
+relevance: A bulky acyl protecting group for alcohols/amines, and a prodrug ester (pivampicillin) resistant
+  to esterases.
+tags:
+- protecting-group
+- tool
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

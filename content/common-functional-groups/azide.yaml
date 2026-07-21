@@ -1,0 +1,16 @@
+id: azide
+deck: common-functional-groups
+name: Azide
+smarts: '[#7]=[#7+]=[#7-]'
+representative_smiles: CCN=[N+]=[N-]
+properties:
+  polarity: medium
+relevance: Linear N3; energetic and a click-chemistry handle, but a safety/reactivity alert.
+tags:
+- click
+- structural-alert
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

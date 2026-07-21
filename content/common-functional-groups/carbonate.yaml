@@ -1,0 +1,16 @@
+id: carbonate
+deck: common-functional-groups
+name: Carbonate Ester
+smarts: '[OX2][CX3](=[OX1])[OX2]'
+representative_smiles: COC(=O)OC
+properties:
+  polarity: medium
+relevance: -O-C(=O)-O-; a hydrolysable linkage used in prodrugs and polymers.
+tags:
+- neutral
+- labile
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

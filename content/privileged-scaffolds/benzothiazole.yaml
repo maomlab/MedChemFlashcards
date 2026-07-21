@@ -1,0 +1,15 @@
+id: benzothiazole
+deck: privileged-scaffolds
+name: Benzothiazole
+smarts: c1ccc2scnc2c1
+representative_smiles: c1ccc2scnc2c1
+properties:
+  polarity: low
+relevance: Benzo-fused thiazole; a privileged aromatic core (riluzole, imaging agents).
+tags:
+- privileged
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

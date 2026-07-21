@@ -1,0 +1,17 @@
+id: alanine-sidechain
+deck: amino-acid-side-chains
+name: Alanine (methyl)
+smarts: '[CX4H3]'
+representative_smiles: C[C@@H](N)C(=O)O
+depiction:
+  highlight_smarts: '[CX4H3]'
+properties:
+  polarity: low
+relevance: The minimal hydrophobic side chain, a methyl group; a common mutagenesis probe (alanine scanning).
+tags:
+- hydrophobic
+difficulty: 1
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

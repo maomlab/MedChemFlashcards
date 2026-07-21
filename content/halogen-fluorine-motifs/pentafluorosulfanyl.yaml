@@ -1,0 +1,19 @@
+id: pentafluorosulfanyl
+deck: halogen-fluorine-motifs
+name: Pentafluorosulfanyl (SF5)
+aliases:
+- SF5
+smarts: '[SX6]([F])([F])([F])([F])[F]'
+representative_smiles: FS(F)(F)(F)(F)c1ccccc1
+properties:
+  polarity: low
+relevance: SF5; a bulky, very lipophilic and strongly electron-withdrawing 'super-CF3' group of growing
+  interest.
+tags:
+- fluorine
+- lipophilic
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

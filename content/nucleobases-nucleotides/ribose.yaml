@@ -1,0 +1,19 @@
+id: ribose
+deck: nucleobases-nucleotides
+name: Ribose (furanose)
+smarts: '[CX4]1[OX2][CX4][CX4][CX4]1'
+representative_smiles: OC[C@H]1O[C@H](O)[C@H](O)[C@@H]1O
+depiction:
+  highlight_smarts: '[CX4]1[OX2][CX4][CX4][CX4]1'
+properties:
+  polarity: high
+relevance: The five-membered sugar of RNA; its 2'-OH distinguishes it from DNA's deoxyribose and makes
+  RNA more labile.
+tags:
+- sugar
+- furanose
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

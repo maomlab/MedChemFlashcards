@@ -1,0 +1,23 @@
+id: coumarin
+deck: privileged-scaffolds
+name: Coumarin
+smarts: O=c1ccc2ccccc2o1
+representative_smiles: O=c1ccc2ccccc2o1
+properties:
+  polarity: medium
+relevance: Benzopyran-2-one; a fluorophore and the pharmacophore of vitamin-K-antagonist anticoagulants
+  (warfarin).
+examples:
+- name: Warfarin
+  smiles: CC(=O)CC(c1ccccc1)c1c(O)c2ccccc2oc1=O
+  role: anticoagulant
+tags:
+- privileged
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

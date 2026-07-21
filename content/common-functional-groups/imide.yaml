@@ -1,0 +1,23 @@
+id: imide
+deck: common-functional-groups
+name: Imide
+smarts: '[CX3](=[OX1])[NX3][CX3]=[OX1]'
+representative_smiles: CC(=O)NC(C)=O
+properties:
+  typical_pka: 9-10
+  polarity: medium
+relevance: Two acyl groups on one nitrogen; weakly acidic N-H, seen in thalidomide and phthalimide-based
+  degraders.
+tags:
+- acidic
+- hydrogen-bonding
+difficulty: 2
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014

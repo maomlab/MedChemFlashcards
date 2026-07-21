@@ -1,0 +1,16 @@
+id: oxindole
+deck: privileged-scaffolds
+name: Oxindole
+smarts: O=C1Cc2ccccc2N1
+representative_smiles: O=C1Cc2ccccc2N1
+properties:
+  polarity: medium
+relevance: Indolin-2-one; the core of sunitinib and many kinase inhibitors, often as 3-substituted methylene
+  derivatives.
+tags:
+- privileged
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

@@ -1,0 +1,19 @@
+id: bicyclopentane
+deck: bioisosteres
+name: Bicyclo[1.1.1]pentane (BCP)
+aliases:
+- BCP
+smarts: C1C2CC1C2
+representative_smiles: C1C2CC1C2
+properties:
+  polarity: low
+relevance: A rigid cage that mimics a para-substituted benzene while removing aromatic metabolism and
+  improving solubility.
+tags:
+- bioisostere
+- saturated
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

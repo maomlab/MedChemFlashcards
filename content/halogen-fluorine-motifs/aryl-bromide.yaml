@@ -1,0 +1,17 @@
+id: aryl-bromide
+deck: halogen-fluorine-motifs
+name: Aryl Bromide
+smarts: '[c][Br]'
+representative_smiles: Brc1ccccc1
+properties:
+  polarity: low
+relevance: Aromatic C-Br; a stronger halogen-bond donor than chloride and a key cross-coupling handle
+  in synthesis.
+tags:
+- halogen
+- halogen-bond
+difficulty: 1
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

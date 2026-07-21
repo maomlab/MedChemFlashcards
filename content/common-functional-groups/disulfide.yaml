@@ -1,0 +1,16 @@
+id: disulfide
+deck: common-functional-groups
+name: Disulfide
+smarts: '[SX2][SX2]'
+representative_smiles: CSSC
+properties:
+  polarity: low
+relevance: S-S bond formed by thiol oxidation; a redox-sensitive cross-link stabilising proteins and cleavable
+  in linkers.
+tags:
+- redox
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

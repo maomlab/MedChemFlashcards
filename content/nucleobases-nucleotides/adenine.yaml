@@ -1,0 +1,16 @@
+id: adenine
+deck: nucleobases-nucleotides
+name: Adenine
+smarts: Nc1ncnc2[nH]cnc12
+representative_smiles: Nc1ncnc2[nH]cnc12
+properties:
+  polarity: high
+relevance: Purine base pairing with thymine/uracil; also the recognition unit of ATP, NAD, and FAD.
+tags:
+- purine
+- nucleobase
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

@@ -1,0 +1,16 @@
+id: aryl-chloride
+deck: halogen-fluorine-motifs
+name: Aryl Chloride
+smarts: '[c][Cl]'
+representative_smiles: Clc1ccccc1
+properties:
+  polarity: low
+relevance: Aromatic C-Cl; adds lipophilicity and a weak halogen bond, a very common potency handle.
+tags:
+- halogen
+- halogen-bond
+difficulty: 1
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

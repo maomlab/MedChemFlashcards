@@ -1,0 +1,18 @@
+id: threonine-sidechain
+deck: amino-acid-side-chains
+name: Threonine (1-hydroxyethyl)
+smarts: '[CX4H]([CH3])[OX2H]'
+representative_smiles: C[C@@H](O)[C@@H](N)C(=O)O
+depiction:
+  highlight_smarts: '[CX4H]([CH3])[OX2H]'
+properties:
+  polarity: high
+relevance: Beta-branched hydroxyl side chain; H-bonding and a phosphorylation/O-glycosylation site.
+tags:
+- polar
+- branched
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

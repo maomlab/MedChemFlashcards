@@ -1,0 +1,25 @@
+id: glutamate-sidechain
+deck: amino-acid-side-chains
+name: Glutamate (carboxylate)
+smarts: '[CH2][CH2][CX3](=O)[OX2H]'
+representative_smiles: N[C@@H](CCC(=O)O)C(=O)O
+depiction:
+  highlight_smarts: '[CH2][CH2][CX3](=O)[OX2H]'
+properties:
+  charge_at_ph7_4: -1
+  polarity: high
+relevance: Acidic side chain one methylene longer than aspartate; anionic, a frequent metal-binding and
+  catalytic residue.
+tags:
+- acidic
+- ionizable
+difficulty: 2
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: charge_at_ph7_4
+  ref: silverman-2014

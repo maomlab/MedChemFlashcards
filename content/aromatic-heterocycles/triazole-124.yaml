@@ -1,0 +1,23 @@
+id: triazole-124
+deck: aromatic-heterocycles
+name: 1,2,4-Triazole
+smarts: c1nc[nH]n1
+representative_smiles: c1nc[nH]n1
+properties:
+  polarity: medium
+relevance: Three-nitrogen ring; a metabolically robust, weakly basic scaffold and the pharmacophore of
+  azole antifungals.
+examples:
+- name: Fluconazole
+  smiles: OC(Cn1cncn1)(Cn1cncn1)c1ccc(F)cc1F
+  role: antifungal
+tags:
+- aromatic
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

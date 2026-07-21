@@ -1,0 +1,18 @@
+id: chloroacetamide
+deck: pains-reactive-groups
+name: Chloroacetamide
+smarts: '[NX3][CX3](=[OX1])[CX4][Cl]'
+representative_smiles: ClCC(=O)NC
+properties:
+  polarity: medium
+relevance: An alkylating covalent warhead (SN2 at the chloromethyl); potent but often too reactive/nonselective
+  — a structural alert.
+tags:
+- reactive
+- covalent
+- structural-alert
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit-filtercatalog
+  retrieved: '2026-07-20'

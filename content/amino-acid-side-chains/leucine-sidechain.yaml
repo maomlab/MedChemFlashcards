@@ -1,0 +1,17 @@
+id: leucine-sidechain
+deck: amino-acid-side-chains
+name: Leucine (isobutyl)
+smarts: '[CH2][CX4H]([CH3])[CH3]'
+representative_smiles: CC(C)C[C@@H](N)C(=O)O
+depiction:
+  highlight_smarts: '[CH2][CX4H]([CH3])[CH3]'
+properties:
+  polarity: low
+relevance: A large aliphatic hydrophobic side chain; one of the most abundant residues, driving core packing.
+tags:
+- hydrophobic
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

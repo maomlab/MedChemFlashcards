@@ -1,0 +1,17 @@
+id: cyclobutyl
+deck: bioisosteres
+name: Cyclobutyl
+smarts: '[CX4]1[CX4][CX4][CX4]1'
+representative_smiles: C1CCC1c1ccccc1
+properties:
+  polarity: low
+relevance: A small saturated ring used as a metabolically stable, three-dimensional replacement for phenyl
+  or gem-dimethyl.
+tags:
+- bioisostere
+- saturated
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

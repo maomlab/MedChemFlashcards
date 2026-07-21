@@ -1,0 +1,17 @@
+id: aryl-fluoride
+deck: halogen-fluorine-motifs
+name: Aryl Fluoride
+smarts: '[c][F]'
+representative_smiles: Fc1ccccc1
+properties:
+  polarity: low
+relevance: Aromatic C-F; small and strongly electron-withdrawing, it blocks metabolism and subtly tunes
+  pKa and potency with little size penalty.
+tags:
+- halogen
+- fluorine
+difficulty: 1
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

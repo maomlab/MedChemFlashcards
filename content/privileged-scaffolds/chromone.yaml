@@ -1,0 +1,15 @@
+id: chromone
+deck: privileged-scaffolds
+name: Chromone
+smarts: O=c1ccoc2ccccc12
+representative_smiles: O=c1ccoc2ccccc12
+properties:
+  polarity: medium
+relevance: Benzopyran-4-one; the core of flavones and many natural products.
+tags:
+- privileged
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

@@ -1,0 +1,17 @@
+id: aryl-iodide
+deck: halogen-fluorine-motifs
+name: Aryl Iodide
+smarts: '[c][I]'
+representative_smiles: Ic1ccccc1
+properties:
+  polarity: low
+relevance: Aromatic C-I; the strongest halogen-bond donor (and a radio-labelling site), though heavy and
+  metabolically weaker.
+tags:
+- halogen
+- halogen-bond
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

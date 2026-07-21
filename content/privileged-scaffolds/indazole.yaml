@@ -1,0 +1,15 @@
+id: indazole
+deck: privileged-scaffolds
+name: Indazole
+smarts: c1ccc2[nH]ncc2c1
+representative_smiles: c1ccc2[nH]ncc2c1
+properties:
+  polarity: low
+relevance: Benzo-fused pyrazole; a metabolically robust scaffold in kinase inhibitors (e.g. pazopanib).
+tags:
+- privileged
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

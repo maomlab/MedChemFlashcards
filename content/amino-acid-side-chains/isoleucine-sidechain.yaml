@@ -1,0 +1,18 @@
+id: isoleucine-sidechain
+deck: amino-acid-side-chains
+name: Isoleucine (sec-butyl)
+smarts: '[CX4H]([CH3])[CH2][CH3]'
+representative_smiles: CC[C@H](C)[C@@H](N)C(=O)O
+depiction:
+  highlight_smarts: '[CX4H]([CH3])[CH2][CH3]'
+properties:
+  polarity: low
+relevance: Beta-branched hydrophobic side chain (an isomer of leucine) that favours beta-sheet conformations.
+tags:
+- hydrophobic
+- branched
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

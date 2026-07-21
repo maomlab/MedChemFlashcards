@@ -1,0 +1,15 @@
+id: hypoxanthine
+deck: nucleobases-nucleotides
+name: Hypoxanthine
+smarts: O=c1[nH]cnc2[nH]cnc12
+representative_smiles: O=c1[nH]cnc2[nH]cnc12
+properties:
+  polarity: high
+relevance: Deaminated adenine; an intermediate in purine salvage and the base of inosine.
+tags:
+- purine
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

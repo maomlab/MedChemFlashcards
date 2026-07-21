@@ -1,0 +1,22 @@
+id: xanthine
+deck: nucleobases-nucleotides
+name: Xanthine
+smarts: O=c1[nH]c(=O)c2[nH]cnc2[nH]1
+representative_smiles: O=c1[nH]c(=O)c2[nH]cnc2[nH]1
+properties:
+  polarity: high
+relevance: Purine-2,6-dione; the scaffold of caffeine and theophylline and the product of purine catabolism.
+examples:
+- name: Caffeine
+  smiles: Cn1cnc2c1c(=O)n(C)c(=O)n2C
+  role: stimulant
+tags:
+- purine
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

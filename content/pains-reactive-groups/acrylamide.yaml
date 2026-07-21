@@ -1,0 +1,18 @@
+id: acrylamide
+deck: pains-reactive-groups
+name: Acrylamide (covalent warhead)
+smarts: '[NX3][CX3](=[OX1])[CX3]=[CX3]'
+representative_smiles: C=CC(=O)N
+properties:
+  polarity: medium
+relevance: An electron-poor acrylamide adds to cysteine thiols; a designed covalent warhead (e.g. ibrutinib,
+  osimertinib) and a reactivity alert.
+tags:
+- reactive
+- covalent
+- warhead
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit-filtercatalog
+  retrieved: '2026-07-20'

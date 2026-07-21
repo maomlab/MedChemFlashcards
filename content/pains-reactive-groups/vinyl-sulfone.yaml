@@ -1,0 +1,17 @@
+id: vinyl-sulfone
+deck: pains-reactive-groups
+name: Vinyl Sulfone
+smarts: '[SX4](=[OX1])(=[OX1])[CX3]=[CX3]'
+representative_smiles: C=CS(=O)(=O)C
+properties:
+  polarity: medium
+relevance: A Michael acceptor that covalently traps cysteines; used as a protease warhead and a reactivity
+  alert.
+tags:
+- reactive
+- covalent
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit-filtercatalog
+  retrieved: '2026-07-20'

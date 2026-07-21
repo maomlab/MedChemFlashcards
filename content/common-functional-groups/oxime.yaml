@@ -1,0 +1,16 @@
+id: oxime
+deck: common-functional-groups
+name: Oxime
+smarts: '[CX3]=[NX2][OX2H]'
+representative_smiles: CC=NO
+properties:
+  polarity: medium
+relevance: C=N-OH from a carbonyl plus hydroxylamine; a metal chelator and the reactivator motif of some
+  antidotes (pralidoxime).
+tags:
+- hydrogen-bonding
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

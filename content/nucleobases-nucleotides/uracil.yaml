@@ -1,0 +1,23 @@
+id: uracil
+deck: nucleobases-nucleotides
+name: Uracil
+smarts: O=c1cc[nH]c(=O)[nH]1
+representative_smiles: O=c1cc[nH]c(=O)[nH]1
+properties:
+  polarity: high
+relevance: The RNA pyrimidine pairing with adenine; the target scaffold of fluoropyrimidine drugs (5-FU).
+examples:
+- name: 5-Fluorouracil
+  smiles: O=c1[nH]cc(F)c(=O)[nH]1
+  role: antineoplastic
+tags:
+- pyrimidine
+- nucleobase
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

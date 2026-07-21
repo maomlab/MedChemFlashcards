@@ -1,0 +1,16 @@
+id: cytosine
+deck: nucleobases-nucleotides
+name: Cytosine
+smarts: Nc1cc[nH]c(=O)n1
+representative_smiles: Nc1cc[nH]c(=O)n1
+properties:
+  polarity: high
+relevance: Pyrimidine base pairing with guanine; deamination to uracil is a common mutation.
+tags:
+- pyrimidine
+- nucleobase
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

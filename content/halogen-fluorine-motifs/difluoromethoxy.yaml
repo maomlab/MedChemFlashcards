@@ -1,0 +1,15 @@
+id: difluoromethoxy
+deck: halogen-fluorine-motifs
+name: Difluoromethoxy
+smarts: '[OX2][CX4H]([F])[F]'
+representative_smiles: FC(F)Oc1ccccc1
+properties:
+  polarity: low
+relevance: OCHF2; a weakly H-bond-donating, lipophilic group intermediate between OMe and OCF3 (e.g. pantoprazole).
+tags:
+- fluorine
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

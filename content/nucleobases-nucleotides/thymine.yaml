@@ -1,0 +1,16 @@
+id: thymine
+deck: nucleobases-nucleotides
+name: Thymine
+smarts: Cc1c[nH]c(=O)[nH]c1=O
+representative_smiles: Cc1c[nH]c(=O)[nH]c1=O
+properties:
+  polarity: high
+relevance: 5-Methyluracil; the DNA base pairing with adenine.
+tags:
+- pyrimidine
+- nucleobase
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

@@ -1,0 +1,15 @@
+id: benzoxazole
+deck: privileged-scaffolds
+name: Benzoxazole
+smarts: c1ccc2ocnc2c1
+representative_smiles: c1ccc2ocnc2c1
+properties:
+  polarity: low
+relevance: Benzo-fused oxazole; a flat, lipophilic H-bond acceptor scaffold.
+tags:
+- privileged
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

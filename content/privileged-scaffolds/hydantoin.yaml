@@ -1,0 +1,16 @@
+id: hydantoin
+deck: privileged-scaffolds
+name: Hydantoin
+smarts: '[NX3]1[CX3](=[OX1])[CX4][NX3][CX3]1=[OX1]'
+representative_smiles: O=C1CNC(=O)N1
+properties:
+  polarity: high
+relevance: Imidazolidine-2,4-dione; a stable, H-bonding scaffold in anticonvulsants (phenytoin) and androgen
+  antagonists.
+tags:
+- privileged
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

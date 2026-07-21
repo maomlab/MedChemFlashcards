@@ -1,0 +1,16 @@
+id: thp-ether
+deck: medchem-tools
+name: THP Ether
+aliases:
+- tetrahydropyranyl
+smarts: '[OX2][CX4H]1[OX2][CX4][CX4][CX4][CX4]1'
+representative_smiles: CCOC1CCCCO1
+relevance: Tetrahydropyranyl protection of alcohols; cheap and acid-labile, though it introduces a stereocentre.
+tags:
+- protecting-group
+- tool
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

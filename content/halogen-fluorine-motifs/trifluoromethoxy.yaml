@@ -1,0 +1,17 @@
+id: trifluoromethoxy
+deck: halogen-fluorine-motifs
+name: Trifluoromethoxy
+smarts: '[OX2][CX4]([F])([F])[F]'
+representative_smiles: FC(F)(F)Oc1ccccc1
+properties:
+  polarity: low
+relevance: OCF3; highly lipophilic and metabolically inert, orienting roughly perpendicular to the ring,
+  unlike OMe.
+tags:
+- fluorine
+- lipophilic
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

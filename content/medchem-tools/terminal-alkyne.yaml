@@ -1,0 +1,16 @@
+id: terminal-alkyne
+deck: medchem-tools
+name: Terminal Alkyne
+smarts: '[CX2]#[CX2H]'
+representative_smiles: C#CCO
+properties:
+  polarity: low
+relevance: A click-chemistry handle (CuAAC with azides) for bioconjugation and probe attachment.
+tags:
+- tool
+- click
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

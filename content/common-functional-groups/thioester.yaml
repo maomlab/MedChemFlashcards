@@ -1,0 +1,15 @@
+id: thioester
+deck: common-functional-groups
+name: Thioester
+smarts: '[CX3](=[OX1])[SX2][#6]'
+representative_smiles: CC(=O)SC
+properties:
+  polarity: medium
+relevance: Activated acyl carrier (as in acetyl-CoA); more electrophilic than an ester, central to metabolism.
+tags:
+- reactive
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

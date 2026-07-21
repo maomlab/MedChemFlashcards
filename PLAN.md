@@ -15,7 +15,7 @@
 | 1 — Schema & data model (Pydantic + JSON Schema + SQLAlchemy) | ✅ done |
 | 2 — Cheminformatics core (RDKit properties + highlighted SVG) | ✅ done |
 | 3 — Curation pipeline & QC (provenance/licensing gate) | ✅ done |
-| 4 — Seed content (111 cards across 8 decks) | ✅ done |
+| 4 — Seed content (168 cards across 11 decks) | ✅ done |
 | 5 — Backend API (FastAPI: decks, cards, SVG) | ✅ done |
 | 6 — Frontend SPA (React + TS + Vite deck/card views) | ✅ done |
 | 7 — Spaced repetition (FSRS + localStorage study loop) | ✅ done |
@@ -23,19 +23,21 @@
 | 9 — Packaging & deploy (Docker image, FastAPI-served SPA, offline PWA) | ✅ done |
 
 Quality gates all green: `ruff`, `mypy --strict` (30 files), 41 pytest tests,
-7 vitest tests, frontend `tsc`/build. The 111 authored cards pass the
+7 vitest tests, frontend `tsc`/build. The 168 authored cards pass the
 provenance/licensing QC gate (0 errors, 0 warnings).
 
 **Scheduler.** Upgraded from SM-2 to **FSRS-4.5** (stability/difficulty model,
 published default weights). The backend stores scheduler state as an opaque JSON
 blob (`Progress.state`) so future algorithm changes need no DB migration.
 
-**Content (111 cards, 8 decks).** Common Functional Groups 34 · Aromatic
-Heterocycles 18 · Bioisosteres 8 · PAINS & Reactive 12 · MedChem Tools 9 ·
-Saturated Heterocycles 9 · Amino Acid Side Chains 12 · Phosphorus & Sulfur
-Groups 9. The three decks beyond the original five extend the scope to
-ring systems, biomolecule side chains, and P/S motifs; amino-acid cards
-highlight just the characteristic side-chain group.
+**Content (168 cards, 11 decks).** Common Functional Groups 40 · Aromatic
+Heterocycles 22 · Bioisosteres 10 · PAINS & Reactive 16 · MedChem Tools 14 ·
+Saturated Heterocycles 9 · Amino Acid Side Chains 20 (all proteinogenic) ·
+Phosphorus & Sulfur Groups 9 · Nucleobases & Nucleotides 10 · Privileged
+Scaffolds 10 · Halogen & Fluorine Motifs 8. The six decks beyond the original
+five broaden scope to ring systems, biomolecule side chains, nucleic-acid
+components, recurring drug scaffolds, and halogen/P/S motifs. Amino-acid and
+sugar cards highlight just the characteristic motif on the parent molecule.
 
 **Packaging.** Multi-stage `Dockerfile` (Node build of the SPA → Python runtime
 with RDKit, content DB baked in at build time, SPA served by FastAPI, user DB on

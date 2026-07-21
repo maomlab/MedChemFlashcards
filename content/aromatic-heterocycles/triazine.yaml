@@ -1,0 +1,15 @@
+id: triazine
+deck: aromatic-heterocycles
+name: 1,3,5-Triazine
+smarts: c1ncncn1
+representative_smiles: c1ncncn1
+properties:
+  polarity: medium
+relevance: Symmetric three-nitrogen ring; an electron-poor scaffold in herbicides and mTOR inhibitors.
+tags:
+- aromatic
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

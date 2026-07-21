@@ -1,0 +1,22 @@
+id: barbiturate
+deck: privileged-scaffolds
+name: Barbiturate
+smarts: '[NX3]1[CX3](=[OX1])[CX4][CX3](=[OX1])[NX3][CX3]1=[OX1]'
+representative_smiles: O=C1CC(=O)NC(=O)N1
+properties:
+  typical_pka: 7-8
+  polarity: high
+relevance: Pyrimidine-2,4,6-trione; the sedative-hypnotic pharmacophore, acidic at the central CH.
+tags:
+- privileged
+- acidic
+difficulty: 3
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: typical_pka
+  ref: silverman-2014

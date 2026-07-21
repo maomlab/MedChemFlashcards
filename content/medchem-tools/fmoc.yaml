@@ -1,0 +1,14 @@
+id: fmoc
+deck: medchem-tools
+name: Fmoc (Fluorenylmethyl Carbamate)
+smarts: '[NX3][CX3](=[OX1])[OX2][CH2][CH]1c2ccccc2-c2ccccc21'
+representative_smiles: CNC(=O)OCC1c2ccccc2-c2ccccc21
+relevance: Base-labile amine protection removed by piperidine; the backbone of solid-phase peptide synthesis.
+tags:
+- protecting-group
+- tool
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

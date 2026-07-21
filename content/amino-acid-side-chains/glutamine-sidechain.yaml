@@ -1,0 +1,19 @@
+id: glutamine-sidechain
+deck: amino-acid-side-chains
+name: Glutamine (carboxamide)
+smarts: '[CH2][CH2][CX3](=[OX1])[NX3]'
+representative_smiles: NC(=O)CC[C@@H](N)C(=O)O
+depiction:
+  highlight_smarts: '[CH2][CH2][CX3](=[OX1])[NX3]'
+properties:
+  polarity: high
+relevance: Neutral carboxamide side chain (the amide of glutamate); an H-bond donor/acceptor common at
+  protein surfaces.
+tags:
+- polar
+- hydrogen-bonding
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

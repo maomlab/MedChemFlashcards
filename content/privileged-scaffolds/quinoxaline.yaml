@@ -1,0 +1,15 @@
+id: quinoxaline
+deck: privileged-scaffolds
+name: Quinoxaline
+smarts: c1ccc2nccnc2c1
+representative_smiles: c1ccc2nccnc2c1
+properties:
+  polarity: low
+relevance: Benzo-fused pyrazine; a rigid diacceptor scaffold in antivirals and dyes.
+tags:
+- privileged
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

@@ -1,0 +1,18 @@
+id: glycine-sidechain
+deck: amino-acid-side-chains
+name: Glycine (no side chain)
+smarts: '[NX3][CH2][CX3](=[OX1])[OX2H]'
+representative_smiles: NCC(=O)O
+depiction:
+  highlight_smarts: '[CH2]'
+properties:
+  polarity: medium
+relevance: 'The only achiral residue: its ''side chain'' is just hydrogen, giving maximal backbone flexibility
+  (hinges, tight turns).'
+tags:
+- flexible
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

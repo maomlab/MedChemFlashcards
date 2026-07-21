@@ -1,0 +1,16 @@
+id: alkyl-fluoride
+deck: halogen-fluorine-motifs
+name: Alkyl Fluoride
+smarts: '[CX4][F]'
+representative_smiles: CCF
+properties:
+  polarity: low
+relevance: Aliphatic C-F; blocks a metabolic soft spot and modulates the basicity of nearby amines through
+  induction.
+tags:
+- fluorine
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

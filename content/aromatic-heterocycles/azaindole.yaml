@@ -1,0 +1,17 @@
+id: azaindole
+deck: aromatic-heterocycles
+name: 7-Azaindole
+smarts: c1ccc2[nH]ccc2n1
+representative_smiles: c1ccc2[nH]ccc2n1
+properties:
+  polarity: medium
+relevance: A pyridine-fused pyrrole; an indole isostere that adds an H-bond acceptor and tunes physicochemistry.
+bioisosteres:
+- indole
+tags:
+- aromatic
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'

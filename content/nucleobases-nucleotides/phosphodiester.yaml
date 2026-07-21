@@ -1,0 +1,23 @@
+id: phosphodiester
+deck: nucleobases-nucleotides
+name: Phosphodiester
+smarts: '[#6][OX2][PX4](=[OX1])([OX2])[OX2][#6]'
+representative_smiles: COP(=O)(O)OC
+properties:
+  charge_at_ph7_4: -1
+  polarity: high
+relevance: The anionic backbone linkage of DNA/RNA joining sugars 3'-to-5'; hydrolytically robust and
+  a nuclease target.
+tags:
+- backbone
+- acidic
+difficulty: 3
+references:
+- id: silverman-2014
+  citation: Silverman & Holladay, The Organic Chemistry of Drug Design, 3rd ed. (2014)
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: charge_at_ph7_4
+  ref: silverman-2014

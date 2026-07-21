@@ -1,0 +1,22 @@
+id: quinazoline
+deck: privileged-scaffolds
+name: Quinazoline
+smarts: c1ccc2ncncc2c1
+representative_smiles: c1ccc2ncncc2c1
+properties:
+  polarity: low
+relevance: Benzo-fused pyrimidine; the hinge-binding core of many EGFR/receptor tyrosine-kinase inhibitors
+  (gefitinib, erlotinib).
+examples:
+- name: Gefitinib core
+  smiles: C1=CC2=NC=NC(=C2C=C1)N
+tags:
+- privileged
+difficulty: 2
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
+- field: examples
+  source: wikidata
+  retrieved: '2026-07-20'

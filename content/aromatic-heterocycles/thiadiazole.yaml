@@ -1,0 +1,15 @@
+id: thiadiazole
+deck: aromatic-heterocycles
+name: 1,3,4-Thiadiazole
+smarts: c1nncs1
+representative_smiles: c1nncs1
+properties:
+  polarity: medium
+relevance: Sulfur/two-nitrogen ring; a compact bioisostere used in acetazolamide and other drugs.
+tags:
+- aromatic
+difficulty: 3
+provenance:
+- field: smarts
+  source: rdkit
+  retrieved: '2026-07-20'
