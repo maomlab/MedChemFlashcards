@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { type AuthUser, api, clearToken, getToken } from "./api";
+import { IS_STATIC, type AuthUser, api, clearToken, getToken } from "./api";
 import { AuthBar } from "./components/AuthBar";
 import { DeckList } from "./components/DeckList";
 import { StudySession } from "./components/StudySession";
@@ -8,9 +8,9 @@ export function App() {
   const [deckId, setDeckId] = useState<string | null>(null);
   const [user, setUser] = useState<AuthUser | null>(null);
 
-  // Restore session from a stored token on load.
+  // Restore session from a stored token on load (skipped in static mode: no API).
   useEffect(() => {
-    if (!getToken()) return;
+    if (IS_STATIC || !getToken()) return;
     api
       .me()
       .then(setUser)
@@ -29,7 +29,7 @@ export function App() {
           <h1>MedChem Flashcards</h1>
           <span className="tag">functional groups · spaced repetition</span>
         </div>
-        <AuthBar user={user} onAuth={setUser} onLogout={logout} />
+        {!IS_STATIC && <AuthBar user={user} onAuth={setUser} onLogout={logout} />}
       </header>
       {deckId ? (
         <StudySession deckId={deckId} loggedIn={user !== null} onExit={() => setDeckId(null)} />

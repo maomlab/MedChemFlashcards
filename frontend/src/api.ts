@@ -1,5 +1,11 @@
 import type { CardDetail, DeckDetail, DeckSummary } from "./types";
 
+// Static mode (VITE_STATIC=1) serves precomputed JSON from `${base}data/` instead
+// of a live API — used for GitHub Pages / any static host. Accounts and progress
+// sync are unavailable in this mode; anonymous localStorage progress still works.
+export const IS_STATIC = import.meta.env.VITE_STATIC === "1";
+const DATA = `${import.meta.env.BASE_URL}data`;
+
 const TOKEN_KEY = "medchem.token";
 
 export function getToken(): string | null {
@@ -63,9 +69,12 @@ export interface ServerProgress {
 }
 
 export const api = {
-  listDecks: () => req<DeckSummary[]>("/api/decks"),
-  getDeck: (id: string) => req<DeckDetail>(`/api/decks/${id}`),
-  getCard: (id: string) => req<CardDetail>(`/api/cards/${id}`),
+  listDecks: () =>
+    IS_STATIC ? req<DeckSummary[]>(`${DATA}/decks.json`) : req<DeckSummary[]>("/api/decks"),
+  getDeck: (id: string) =>
+    IS_STATIC ? req<DeckDetail>(`${DATA}/decks/${id}.json`) : req<DeckDetail>(`/api/decks/${id}`),
+  getCard: (id: string) =>
+    IS_STATIC ? req<CardDetail>(`${DATA}/cards/${id}.json`) : req<CardDetail>(`/api/cards/${id}`),
 
   register: (email: string, password: string) =>
     req<TokenResponse>("/api/auth/register", {

@@ -72,6 +72,29 @@ functional — logging in only adds cross-device persistence, merging local and
 server progress per card by most-recent review. Scheduling uses **FSRS-4.5**;
 the app is a **PWA** and works offline for previously viewed content.
 
+## Static hosting (GitHub Pages)
+
+The app can be deployed as a **fully static site** — no backend — because content
+is a build artifact and the spaced-repetition scheduler runs in the browser. In
+this mode the SPA loads precomputed JSON instead of calling the API; accounts and
+cross-device sync are unavailable, but anonymous localStorage progress works and
+the app is an installable, offline-capable PWA.
+
+Automated deploy: the included `.github/workflows/pages.yml` builds and publishes
+to Pages on every push to `main`. Enable it once under **Settings → Pages →
+Build and deployment → Source: GitHub Actions**. The base path is derived
+automatically (a `<name>.github.io` repo is served at `/`; any other repo is a
+project page served at `/<repo>/`).
+
+Build it locally:
+
+```bash
+uv run medchem export-static --out frontend/public/data   # precompute JSON
+cd frontend
+VITE_STATIC=1 VITE_BASE=/<repo>/ npm run build            # omit VITE_BASE for a user site
+# serve frontend/dist under that base path with any static file server
+```
+
 ## Docker
 
 A multi-stage build compiles the SPA, installs the Python runtime (with RDKit),

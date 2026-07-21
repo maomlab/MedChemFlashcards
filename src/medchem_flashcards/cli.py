@@ -47,6 +47,21 @@ def qc(
     raise typer.Exit(code=0 if report.ok else 1)
 
 
+@app.command(name="export-static")
+def export_static_cmd(
+    content: Path = typer.Option(DEFAULT_CONTENT, help="Authored content directory."),
+    out: Path = typer.Option(
+        Path("frontend/public/data"), help="Output directory for static JSON."
+    ),
+) -> None:
+    """Export content as static JSON (mirrors the read API) for static hosting."""
+    from medchem_flashcards.curate.export_static import export_static
+
+    report = export_static(content_dir=content, out_dir=out)
+    typer.echo(report.summary())
+    raise typer.Exit(code=0 if report.ok else 1)
+
+
 @app.command()
 def serve(
     db: Path = typer.Option(DEFAULT_DB, help="SQLite database to serve."),
